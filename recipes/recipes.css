@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  background: #fff;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fdefff;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 3px;
+  color: #a173c4;
+  font-size: 18px;
+}
+
+.nav-controls {
+  display: flex;
+  gap: 15px;
+}
+
+.search-input, .category-select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+
+.recipe-title {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+.recipe-title h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 600;
+  color: #e6876a;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #555;
+}
+
+
+.recipe-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px 40px;
+}
+
+.recipe-image img {
+  width: 360px;
+  border-radius: 6px;
+}
+
+.recipe-right {
+  max-width: 340px;
+}
+
+.recipe-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #eef5ee;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.toggle {
+  background: #dff3e1;
+}
+
+
+.ingredients-card {
+  background: #fff8da;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.ingredients-card h2 {
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+.ingredients-card ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+
+.instructions-section {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 40px;
+}
+
+.instructions, .nutrition {
+  max-width: 380px;
+}
+
+.instructions h2, .nutrition h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.instructions ol {
+  padding-left: 20px;
+  line-height: 1.9;
+}
+
+.nutrition p {
+  line-height: 1.6;
+}
+
+.recipe-nav {
+  background: #fdefff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #a173c4; 
+  font-weight: 500;
+}
+
+.nav-right {
+  display: flex;
+  gap: 10px;
+}
+
+.search-input,
+.category-select {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
