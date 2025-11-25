@@ -88,7 +88,10 @@ body {
   gap: 40px;
   padding: 0 40px;
 }
-
+.cards img {
+    width: 100px;
+  margin: 0 20px;
+}
 .card {
   width: 260px;
   padding: 40px;
