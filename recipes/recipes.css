@@ -107,15 +107,16 @@ body {
 .instructions-section {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  align-items: flex-start;
+  gap: 40px;
   padding: 40px;
 }
 
-.instructions, .nutrition {
+.instructions{
   max-width: 380px;
 }
 
-.instructions h2, .nutrition h2 {
+.instructions h2{
   font-size: 22px;
   margin-bottom: 15px;
 }
@@ -123,10 +124,6 @@ body {
 .instructions ol {
   padding-left: 20px;
   line-height: 1.9;
-}
-
-.nutrition p {
-  line-height: 1.6;
 }
 
 .recipe-nav {
@@ -155,4 +152,28 @@ body {
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 14px;
+}
+.nutrition {
+  background-color: #fff8e6;
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-top: 40px;
+  line-height: 1.6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+
+  display: inline-block;
+  width: auto;
+  max-width: 320px;
+}
+
+.nutrition h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #d07d5a;
+}
+
+.nutrition p {
+  margin: 3px 0;
+  font-size: 15px;
+  color: #4a3d34;
 }
