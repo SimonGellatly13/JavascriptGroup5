@@ -226,19 +226,14 @@ h2 {
   color: #d2691e;
 }
 
-/* Tablets */
+/* TABLETS */
 @media (max-width: 1024px) {
-
   .navbar {
     padding: 20px 40px;
   }
 
   .title {
     font-size: 48px;
-  }
-
-  .cards {
-    gap: 20px;
   }
 
   .card {
@@ -251,23 +246,17 @@ h2 {
   }
 }
 
-/* Bigger Phones */
+/* BIGGER PHONES */
 @media (max-width: 768px) {
 
-   .navbar {
+  .navbar {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    text-align: center;
   }
 
   .nav-left ul {
     gap: 20px;
-  }
-
-  .search-input {
-    width: 100%;
-    font-size: 14px;
   }
 
   .title {
@@ -281,7 +270,6 @@ h2 {
   .cards {
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
   }
 
   .card {
@@ -295,12 +283,12 @@ h2 {
 
   .category-grid,
   .recipe-grid {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     padding: 0 20px;
   }
 }
 
-/* Phones */
+/* SMALL PHONES */
 @media (max-width: 480px) {
 
   .navbar {
@@ -311,6 +299,10 @@ h2 {
     font-size: 32px;
   }
 
+  h2 {
+    font-size: 28px;
+  }
+
   .subtitle {
     font-size: 16px;
   }
@@ -318,11 +310,6 @@ h2 {
   .icons img {
     width: 55px;
     margin: 10px;
-  }
-
-  .popular h2,
-  h2 {
-    font-size: 28px;
   }
 
   .card {
