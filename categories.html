@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dessert Categories</title>
+  <link rel="stylesheet" href="homepage.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="nav-left">
+            <ul class="nav-links">
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="categories.html">Categories</a></li>
+      </ul>
+      </div>
+      <div class="nav-right">
+      <input type="text" placeholder="Search..." class="search-bar" />
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="categories">
+  <h2>Categories</h2>
+  <h3>Browse by type</h3>
+  <div class="filter-bar">
+    <input type="text" id="categorySearch" placeholder="Keyword.." />
+    <select id="categoryFilter">
+      <option value="all">Filter options</option>
+      <option value="mousses">Mousses</option>
+      <option value="tarts">Tarts</option>
+      <option value="cake">Cakes</option>
+      <option value="cookies">Cookies</option>
+      <option value="cheesecakes">Cheesecakes</option>
+    </select>
+  </div>
+
+  <div class="category-grid">
+    <div class="category-card" data-type="mousses">
+      <img src="images/mousse.png" alt="Mousses" />
+      <p>Mousses</p>
+    </div>
+    <div class="category-card" data-type="tarts">
+      <img src="images/tart.png" alt="Tarts" />
+      <p>Tarts</p>
+    </div>
+    <div class="category-card" data-type="cakes">
+      <img src="images/cake-slice.png" alt="Cakes" />
+      <p>Cakes</p>
+    </div>
+    <div class="category-card" data-type="cookies">
+      <img src="images/cookies.png" alt="Cookies" />
+      <p>Cookies</p>
+    </div>
+        <div class="category-card" data-type="cheesecakes">
+      <img src="images/cheesecake.png" alt="Cheesecake" />
+      <p>Cheesecakes</p>
+    </div>
+</div>
+</section>
+</main>
+</body>
+</html>
