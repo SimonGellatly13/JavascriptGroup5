@@ -1,5 +1,6 @@
 Observations from testing HTML: Phase 2
 
+
 //categories.html
 
 This page contains bakery item categories along with simple pictures representing each category. The search bars, filter options, and category buttons are not yet responsive.
