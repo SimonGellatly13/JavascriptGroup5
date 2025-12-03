@@ -54,7 +54,7 @@ body {
   color: #EA8A76;
   line-height: 1.1;
   margin-bottom: 10px;
-  font-family: cursive;
+  font-family: Comic Sans MS, sans-serif;
 }
 
 .title span {
@@ -170,7 +170,7 @@ h2 {
   color: #EA8A76;
   line-height: 1.1;
   margin-bottom: 10px;
-  font-family: cursive;
+  font-family: Comic Sans MS;
 }
 .recipe-link {
   color: #cc6b5a;
