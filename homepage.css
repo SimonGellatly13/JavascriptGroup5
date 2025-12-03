@@ -113,12 +113,10 @@ body {
 
 .cookies { background-color: #FBFBE6; }
 .tarts   { background-color: #E3F0E9; }
-.pies    { background-color: #FBECEC; }
+.cupcake   { background-color: #FBECEC; }
 
-.nutrition h2 {
-  font-size: 32px;
+footer {
   text-align: center;
-  margin-top: 60px;
 }
 .categories {
   padding: 2rem;
@@ -173,6 +171,17 @@ h2 {
   line-height: 1.1;
   margin-bottom: 10px;
   font-family: cursive;
+}
+.recipe-link {
+  color: #cc6b5a;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+}
+
+.recipe-link:hover {
+  text-decoration: underline;
+  color: #a65445;
 }
 
 .recipe-list {
