@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const id = btn.dataset.id;
 
     if (isFavorite(id)) {
-      btn.textContent = "★ Saved";
+      btn.textContent = "★ Favourited";
     }
 
     btn.addEventListener("click", (e) => {
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         img: btn.dataset.img
       });
 
-      btn.textContent = isFavorite(id) ? "★ Saved" : "☆ Save";
+      btn.textContent = isFavorite(id) ? "★ Favourited" : "☆ Favourite";
     });
   });
 
@@ -68,3 +68,4 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   });
 });
+
