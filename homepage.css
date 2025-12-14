@@ -366,5 +366,42 @@ h2 {
     gap: 1rem;
   }
 }
+/* button centering */
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recipe-card .fav-btn {
+  align-self: center;
+}
+/* button style */
+.fav-btn {
+  background-color: #ffdac8;
+  color: #cc6b5a;
+  border: none;
+  border-radius: 12px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.fav-btn:hover {
+  background-color: #ffc6b0;
+  transform: translateY(-2px);
+}
+
+.fav-btn:active {
+  transform: translateY(0);
+}
+
+.fav-btn.saved {
+  background-color: #EA8A76;
+  color: white;
+}
 
 
