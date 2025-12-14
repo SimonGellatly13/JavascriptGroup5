@@ -1,0 +1,122 @@
+[
+    {
+      "name": "Classic Chocolate Chip Cookies",
+      "url": "recipes/cookies.html",
+      "image": "images/cookies.png",
+      "category": "Cookies"
+    },
+    {
+      "name": "Chocolate Mousse",
+      "url": "recipes/mousse.html",
+      "image": "images/mousse.png",
+      "category": "Mousse"
+    },
+    {
+      "name": "Strawberry Tart",
+      "url": "recipes/tart.html",
+      "image": "images/tart.png",
+      "category": "Tart"
+    },
+    {
+      "name": "New York Cheesecake",
+      "url": "recipes/cheesecake.html",
+      "image": "images/cheesecake.png",
+      "category": "Cheesecake"
+    },
+    {
+      "name": "Strawberry Cake",
+      "url": "recipes/strawberry-cake.html",
+      "image": "images/cake-slice.png",
+      "category": "Cake"
+    },
+    {
+      "name": "Chocolate Cake",
+      "url": "recipes/chocolate-cake.html",
+      "image": "images/chocolate-cake.png",
+      "category": "Cake"
+    },
+    {
+      "name": "Chocolate Cookies",
+      "url": "recipes/chocolate-cookies.html",
+      "image": "images/chocolate-cookies.png",
+      "category": "Cookies"
+    },
+    {
+      "name": "Tiramisu Cake",
+      "url": "recipes/tiramisu.html",
+      "image": "images/tiramisu.png",
+      "category": "Cake"
+    },
+    {
+      "name": "Egg Tart",
+      "url": "recipes/egg-tart.html",
+      "image": "images/egg-tart.png",
+      "category": "Tart"
+    },
+    {
+      "name": "Apple Tart",
+      "url": "recipes/apple-tart.html",
+      "image": "images/apple-tart.png",
+      "category": "Tart"
+    },
+    {
+      "name": "Strawberry Cheesecake",
+      "url": "recipes/strawberry-cheesecake.html",
+      "image": "images/strawberry-cheesecake.png",
+      "category": "Cheesecake"
+    },
+    {
+      "name": "Mango Cheesecake",
+      "url": "recipes/mango-cheesecake.html",
+      "image": "images/mango-cheesecake.png",
+      "category": "Cheesecake"
+    },
+    {
+      "name": "Gingerbread Man Cookies",
+      "url": "recipes/gingerbread-man.html",
+      "image": "images/gingerbread-man.png",
+      "category": "Cookies"
+    },
+    {
+      "name": "Funfetti Cupcake",
+      "url": "recipes/funfetti-cupcake.html",
+      "image": "images/funfetti-cupcake.png",
+      "category": "Cake"
+    },
+    {
+      "name": "Black Forest Cake",
+      "url": "recipes/black-forest.html",
+      "image": "images/black-forest.png",
+      "category": "Cake"
+    },
+    {
+      "name": "Mango Cake",
+      "url": "recipes/mango-cake.html",
+      "image": "images/mango-cake.png",
+      "category": "Cake"
+    },
+    {
+      "name": "Pistachio Tart",
+      "url": "recipes/pistachio-tart.html",
+      "image": "images/pistachio-tart.png",
+      "category": "Tart"
+    },
+    {
+      "name": "Hazelnut Mousse",
+      "url": "recipes/hazelnut-mousse.html",
+      "image": "images/hazelnut-mousse.png",
+      "category": "Mousse"
+    },
+    {
+      "name": "Sugar Cookies",
+      "url": "recipes/sugar-cookies.html",
+      "image": "images/sugar-cookies.png",
+      "category": "Cookies"
+    },
+    {
+      "name": "Red Velvet Cookies",
+      "url": "recipes/red-velvet.html",
+      "image": "images/red-velvet.png",
+      "category": "Cookies"
+    }
+  ]
