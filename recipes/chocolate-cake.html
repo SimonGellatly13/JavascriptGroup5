@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chocolate Cake</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="recipes.css" />
 </head>
 
 <body>
 
 
-<nav class="navbar recipe-nav">
+  <nav class="navbar recipe-nav">
     <div class="navbar recipe-nav">
-        <div class="nav-left">
-            <a href="../homepage.html">Homepage</a>
-            <a href="../recipes.html">Recipes</a>
-            <a href="../categories.html">Categories</a>
-            </div>
-            <div class="nav-right">
-      <input type="text" placeholder="Keyword..." class="search-input">
-      <select class="category-select">
-        <option>Filter by category</option>
-        <option>Mousses</option>
-        <option>Tarts</option>
-        <option>Cakes</option>
-        <option>Cookies</option>
-        <option>Cheesecakes</option>
-      </select>
-    </div>
-</nav>
+      <div class="nav-left">
+        <a href="../homepage.html">Homepage</a>
+        <a href="../recipes.html">Recipes</a>
+        <a href="../categories.html">Categories</a>
+      </div>
+      <div class="nav-right">
+        <input type="text" placeholder="Keyword..." class="search-input">
+        <select class="category-select">
+          <option>Filter by category</option>
+          <option>Mousses</option>
+          <option>Tarts</option>
+          <option>Cakes</option>
+          <option>Cookies</option>
+          <option>Cheesecakes</option>
+        </select>
+      </div>
+  </nav>
   </header>
-<button class="back-btn" onclick="window.location.href='../recipes.html'">
-  ← Back to Recipes
-</button>
+  <button class="back-btn" onclick="window.location.href='../recipes.html'">
+    ← Back to Recipes
+  </button>
   <section class="recipe-title">
     <h1>Chocolate Cake</h1>
     <p class="subtitle">
-      Your favorite homemade chocolate cake recipe. With a super moist crumb and fudgy, yet light texture, this chocolate cake recipe will be your favorite too. Top with chocolate buttercream and chocolate chips for 3x the chocolate flavor.
+      Your favorite homemade chocolate cake recipe. With a super moist crumb and fudgy, yet light texture, this
+      chocolate cake recipe will be your favorite too. Top with chocolate buttercream and chocolate chips for 3x the
+      chocolate flavor.
     </p>
   </section>
 
@@ -51,34 +56,46 @@
     <div class="recipe-right">
 
       <div class="recipe-controls">
-        <button class="btn">Serves ▼</button>
+        <label for="scale">Amount of Cakes:</label>
+        <select id="scale" class="btn" onchange="scaleIngredients()">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="0.5">Half</option>
+        </select>
         <button class="btn toggle">Metric - US</button>
       </div>
 
-      
+
       <div class="ingredients-card">
         <h2>INGREDIENTS</h2>
         <ul>
-            CAKE
-          <li>1 and 3/4 cups (219g) all-purpose flour (spooned & leveled)</li>
-          <li>3/4 cup (62g) unsweetened natural cocoa powder</li>
-          <li>1 and 3/4 cups (350g) granulated sugar</li>
-          <li>2 teaspoons baking soda</li>
-          <li>1 teaspoon baking powder</li>
-          <li>1 teaspoon salt</li>
-          <LI>2 teaspoons espresso powder (optional)</LI>
-          <li>1/2 cup (120ml) vegetable oil (or canola oil or melted coconut oil)</li>
-          <li>2 large eggs, at room temperature</li>
-          <li>2 teaspoons pure vanilla extract</li>
-          <li>1 cup (240ml) buttermilk, at room temperature</li>
-          <li>1 cup (240ml) freshly brewed strong hot coffee (regular or decaf)</li>
-          CHOCOLATE BUTTERCREAM
-          <li>1 and 1/4 cups (282g) unsalted butter, softened to room temperature</li>
-          <li>3 and 1/2 cups (420g) confectioners’ sugar</li>
-          <li>3/4 cup (62g) unsweetened cocoa powder (natural or dutch process)</li>
-          <li>3–5 Tablespoons (45-75ml) heavy cream (or half-and-half or milk), at room temperature</li>
-          <li>1/4 teaspoon salt</li>
-          <li>1 teaspoon pure vanilla extract</li>
+          <strong>CAKE</strong>
+          <li><span class="amount" data-base="1.75">1 and 3/4</span> cups (219g) all-purpose flour (spooned & leveled)
+          </li>
+          <li><span class="amount" data-base="0.75">3/4</span> cup (62g) unsweetened natural cocoa powder</li>
+          <li><span class="amount" data-base="1.75">1 and 3/4</span> cups (350g) granulated sugar</li>
+          <li><span class="amount" data-base="2">2</span> teaspoons baking soda</li>
+          <li><span class="amount" data-base="1">1</span> teaspoon baking powder</li>
+          <li><span class="amount" data-base="1">1</span> teaspoon salt</li>
+          <li><span class="amount" data-base="2">2</span> teaspoons espresso powder (optional)</li>
+          <li><span class="amount" data-base="0.5">1/2</span> cup (120ml) vegetable oil (or canola oil or melted coconut
+            oil)</li>
+          <li><span class="amount" data-base="2">2</span> large eggs, at room temperature</li>
+          <li><span class="amount" data-base="2">2</span> teaspoons pure vanilla extract</li>
+          <li><span class="amount" data-base="1">1</span> cup (240ml) buttermilk, at room temperature</li>
+          <li><span class="amount" data-base="1">1</span> cup (240ml) freshly brewed strong hot coffee (regular or
+            decaf)</li>
+
+          <strong>CHOCOLATE BUTTERCREAM</strong>
+          <li><span class="amount" data-base="1.25">1 and 1/4</span> cups (282g) unsalted butter, softened to room
+            temperature</li>
+          <li><span class="amount" data-base="3.5">3 and 1/2</span> cups (420g) confectioners’ sugar</li>
+          <li><span class="amount" data-base="0.75">3/4</span> cup (62g) unsweetened cocoa powder (natural or dutch
+            process)</li>
+          <li><span class="amount" data-base="3">3</span>–<span class="amount" data-base="5">5</span> Tablespoons
+            (45-75ml) heavy cream (or half-and-half or milk), at room temperature</li>
+          <li><span class="amount" data-base="0.25">1/4</span> teaspoon salt</li>
+          <li><span class="amount" data-base="1">1</span> teaspoon pure vanilla extract</li>
           <li>optional for decoration: semi-sweet chocolate chips</li>
         </ul>
       </div>
@@ -89,33 +106,56 @@
     <div class="instructions">
       <h2>INSTRUCTIONS</h2>
       <ol>
-        <li>Preheat oven to 350°F (177°C). Grease two 9-inch cake pans, line with parchment paper rounds, then grease the parchment paper. Parchment paper helps the cakes seamlessly release from the pans. (If it’s helpful, see this parchment paper rounds for cakes video & post.)</li>
-<li>Make the cake: Whisk the flour, cocoa powder, sugar, baking soda, baking powder, salt, and espresso powder (if using) together in a large bowl. Set aside. Using a handheld or stand mixer fitted with a whisk attachment (or you can use a whisk) mix the oil, eggs, and vanilla together on medium-high speed until combined. Add the buttermilk and mix until combined. Pour the wet ingredients into the dry ingredients, add the hot water/coffee, and whisk or beat on low speed until the batter is completely combined. Batter is thin.</li>
-        <li>Divide batter evenly between pans. Bake for 23-26 minutes or until a toothpick inserted in the center comes out clean. Baking times vary, so keep an eye on yours. The cakes are done when a toothpick inserted in the center comes out clean. (Note: Even if they’re completely done, the cooled cakes may *slightly* sink in the center. Cocoa powder is simply not as structurally strong as all-purpose flour and can’t hold up to all the moisture necessary to make a moist tasting chocolate cake. It’s normal!)</li>
+        <li>Preheat oven to 350°F (177°C). Grease two 9-inch cake pans, line with parchment paper rounds, then grease
+          the parchment paper. Parchment paper helps the cakes seamlessly release from the pans. (If it’s helpful, see
+          this parchment paper rounds for cakes video & post.)</li>
+        <li>Make the cake: Whisk the flour, cocoa powder, sugar, baking soda, baking powder, salt, and espresso powder
+          (if using) together in a large bowl. Set aside. Using a handheld or stand mixer fitted with a whisk attachment
+          (or you can use a whisk) mix the oil, eggs, and vanilla together on medium-high speed until combined. Add the
+          buttermilk and mix until combined. Pour the wet ingredients into the dry ingredients, add the hot
+          water/coffee, and whisk or beat on low speed until the batter is completely combined. Batter is thin.</li>
+        <li>Divide batter evenly between pans. Bake for 23-26 minutes or until a toothpick inserted in the center comes
+          out clean. Baking times vary, so keep an eye on yours. The cakes are done when a toothpick inserted in the
+          center comes out clean. (Note: Even if they’re completely done, the cooled cakes may *slightly* sink in the
+          center. Cocoa powder is simply not as structurally strong as all-purpose flour and can’t hold up to all the
+          moisture necessary to make a moist tasting chocolate cake. It’s normal!)</li>
         <li>Remove the cakes from the oven and set on a wire rack. Allow to cool completely in the pan.</li>
-        <li>Make the buttercream: With a handheld or stand mixer fitted with a paddle attachment, beat the butter on medium speed until creamy—about 2 minutes. Add confectioners’ sugar, cocoa powder, 3 Tablespoons heavy cream, salt, and vanilla extract. Beat on low speed for 30 seconds, then increase to high speed and beat for 1 full minute. Do not over-whip. Add 1/4 cup more confectioners’ sugar or cocoa powder if frosting is too thin or 1-2 more Tablespoons of cream if frosting is too thick. (I usually add 1 more.) Taste. Add another pinch of salt if desired.</li>
-        <li>Assemble and frost: If cooled cakes are domed on top, use a large serrated knife to slice a thin layer off the tops to create a flat surface. This is called “leveling” the cakes. Discard or crumble over finished cake. Place 1 cake layer on your cake stand or serving plate. Evenly cover the top with frosting. Top with 2nd layer and spread remaining frosting all over the top and sides. I always use an icing spatula and bench scraper for the frosting. Garnish with chocolate chips, if desired.</li>
-        <li>Refrigerate uncovered cake for at least 30-60 minutes before slicing to help set the shape. After that, you can serve the cake or continue refrigerating for up to 4–6 hours before serving. Cake can be served at room temperature or chilled.</li>
-        <li>Cover leftover cake tightly and store in the refrigerator for 5 days. I like using a cake carrier for storing and transporting.</li>
-    </ol>
+        <li>Make the buttercream: With a handheld or stand mixer fitted with a paddle attachment, beat the butter on
+          medium speed until creamy—about 2 minutes. Add confectioners’ sugar, cocoa powder, 3 Tablespoons heavy cream,
+          salt, and vanilla extract. Beat on low speed for 30 seconds, then increase to high speed and beat for 1 full
+          minute. Do not over-whip. Add 1/4 cup more confectioners’ sugar or cocoa powder if frosting is too thin or 1-2
+          more Tablespoons of cream if frosting is too thick. (I usually add 1 more.) Taste. Add another pinch of salt
+          if desired.</li>
+        <li>Assemble and frost: If cooled cakes are domed on top, use a large serrated knife to slice a thin layer off
+          the tops to create a flat surface. This is called “leveling” the cakes. Discard or crumble over finished cake.
+          Place 1 cake layer on your cake stand or serving plate. Evenly cover the top with frosting. Top with 2nd layer
+          and spread remaining frosting all over the top and sides. I always use an icing spatula and bench scraper for
+          the frosting. Garnish with chocolate chips, if desired.</li>
+        <li>Refrigerate uncovered cake for at least 30-60 minutes before slicing to help set the shape. After that, you
+          can serve the cake or continue refrigerating for up to 4–6 hours before serving. Cake can be served at room
+          temperature or chilled.</li>
+        <li>Cover leftover cake tightly and store in the refrigerator for 5 days. I like using a cake carrier for
+          storing and transporting.</li>
+      </ol>
     </div>
 
     <div class="nutrition">
       <h2>Nutrition Facts</h2>
       <p>Nutrition Information
-Per Serving (Serves 12)
-<p>Calories: 657</p>
-<p>Carbs: 87g</p>
-<p>Sugar: 63g</p>
-<p>Protein: 6g</p>
-<p>Fat: 34g</p>
-<p>Saturated Fat: 19g</p>
-<p>Sodium: 459mg</p>
-<p>Fiber: 5g</p>
-<p>Iron: 4mg</p>
-<p>Calcium: 88mg</p>
-</div>
+        Per Serving (Serves 12)
+      <p>Calories: 657</p>
+      <p>Carbs: 87g</p>
+      <p>Sugar: 63g</p>
+      <p>Protein: 6g</p>
+      <p>Fat: 34g</p>
+      <p>Saturated Fat: 19g</p>
+      <p>Sodium: 459mg</p>
+      <p>Fiber: 5g</p>
+      <p>Iron: 4mg</p>
+      <p>Calcium: 88mg</p>
+    </div>
   </section>
-
+  <script src="../backendjs/recipe-scaling.js"></script>
 </body>
+
 </html>

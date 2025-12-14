@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Egg Tart</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="recipes.css" />
 </head>
 
 <body>
 
 
-<nav class="navbar recipe-nav">
+  <nav class="navbar recipe-nav">
     <div class="navbar recipe-nav">
-        <div class="nav-left">
-            <a href="../homepage.html">Homepage</a>
-            <a href="../recipes.html">Recipes</a>
-            <a href="../categories.html">Categories</a>
-            </div>
-            <div class="nav-right">
-      <input type="text" placeholder="Keyword..." class="search-input">
-      <select class="category-select">
-        <option>Filter by category</option>
-        <option>Mousses</option>
-        <option>Tarts</option>
-        <option>Cakes</option>
-        <option>Cookies</option>
-        <option>Cheesecakes</option>
-      </select>
-    </div>
-</nav>
+      <div class="nav-left">
+        <a href="../homepage.html">Homepage</a>
+        <a href="../recipes.html">Recipes</a>
+        <a href="../categories.html">Categories</a>
+      </div>
+      <div class="nav-right">
+        <input type="text" placeholder="Keyword..." class="search-input">
+        <select class="category-select">
+          <option>Filter by category</option>
+          <option>Mousses</option>
+          <option>Tarts</option>
+          <option>Cakes</option>
+          <option>Cookies</option>
+          <option>Cheesecakes</option>
+        </select>
+      </div>
+  </nav>
   </header>
-<button class="back-btn" onclick="window.location.href='../recipes.html'">
-  ← Back to Recipes
-</button>
+  <button class="back-btn" onclick="window.location.href='../recipes.html'">
+    ← Back to Recipes
+  </button>
   <section class="recipe-title">
     <h1>Egg Tart</h1>
     <p class="subtitle">
@@ -51,26 +54,29 @@
     <div class="recipe-right">
 
       <div class="recipe-controls">
-        <button class="btn">Serves ▼</button>
+        <label for="scale">Serves:</label>
+        <select id="scale" class="btn" onchange="scaleIngredients()">
+          <option value="1">16</option>
+          <option value="2">32</option>
+          <option value="0.5">8</option>
+        </select>
         <button class="btn toggle">Metric - US</button>
       </div>
 
-      
+
       <div class="ingredients-card">
         <h2>INGREDIENTS</h2>
         <ul>
-         <ul>
-  <li>2 cups all-purpose flour (fluffed and spooned into measuring cup)</li>
-  <li>1/8 teaspoon salt</li>
-  <li>12 tablespoons unsalted butter (slightly softened)</li>
-  <li>2 tablespoons cold water</li>
-  <li>1/2 cup granulated sugar</li>
-  <li>1 cup hot water</li>
-  <li>1/2 cup evaporated milk (at room temperature)</li>
-  <li>3 large eggs (at room temperature)</li>
-  <li>1 teaspoon vanilla extract</li>
-</ul>
-
+          <li><span class="amount" data-base="2">2</span> cups all-purpose flour (fluffed and spooned into measuring
+            cup)</li>
+          <li><span class="amount" data-base="0.125">1/8</span> teaspoon salt</li>
+          <li><span class="amount" data-base="12">12</span> tablespoons unsalted butter (slightly softened)</li>
+          <li><span class="amount" data-base="2">2</span> tablespoons cold water</li>
+          <li><span class="amount" data-base="0.5">1/2</span> cup granulated sugar</li>
+          <li><span class="amount" data-base="1">1</span> cup hot water</li>
+          <li><span class="amount" data-base="0.5">1/2</span> cup evaporated milk (at room temperature)</li>
+          <li><span class="amount" data-base="3">3</span> large eggs (at room temperature)</li>
+          <li><span class="amount" data-base="1">1</span> teaspoon vanilla extract</li>
         </ul>
       </div>
     </div>
@@ -80,42 +86,59 @@
     <div class="instructions">
       <h2>INSTRUCTIONS</h2>
       <ol>
-  <li>In a bowl, combine the flour and salt. The butter should be soft enough to give when pressed, but not so soft that it collapses. It should break up easily with your fingers without immediately forming a paste.</li>
-  <li>Cut the butter into small cubes, and add it to the flour and salt. Working quickly, break it up with your fingers until the mixture resembles coarse crumbs with some pea-sized butter chunks.</li>
-  <li>Add 2 tablespoons of cold water and bring the dough together with your hands. Add more water only if needed (start with 1/2 teaspoon), using no more than 3 teaspoons total. The dough will look dry and scraggly. Wrap it tightly in plastic wrap or a reusable bag and refrigerate for 20 minutes to allow the flour to absorb moisture.</li>
-  <li>On a lightly floured surface, roll the dough into a roughly 6×15 inch rectangle. Work quickly to avoid overworking the dough.</li>
-  <li>Fold the top third of the dough down to the center, then fold the bottom third up over it. Give the dough a quarter turn and roll it out again to a 6×15 inch rectangle. Fold the same way, cover, and chill for 1 hour.</li>
-  <li>While the dough is resting, prepare the filling. Dissolve the sugar into 1 cup of hot water and allow it to cool to room temperature. Whisk together the evaporated milk, eggs, and vanilla, then whisk in the cooled sugar water. Strain the mixture through a fine mesh strainer into a measuring cup or pitcher. You should have about 2 to 2¼ cups of custard.</li>
-  <li>Preheat the oven to 375°F (190°C) and position a rack in the lower third of the oven.</li>
-  <li>Roll the dough out to 0.2 inch (5mm) thickness and cut out 4-inch circles to fit mini tart tins or a shallow nonstick muffin pan. Leave a slight overhang of dough, as the shells will shrink during baking. Re-roll the scraps and cut more circles until you have around 16.</li>
-  <li>Evenly fill the tart shells about three-quarters full. If you left enough dough around the top, fill just up to the point where the dough curves outward.</li>
-  <li>Once filled, carefully transfer the pan to the oven. Immediately reduce the heat to 350°F (180°C) and bake for 26–29 minutes, until the filling is just set. If a toothpick can stand upright in the center, they are done.</li>
-  <li>Allow the tarts to cool for at least 10 minutes before serving.</li>
-</ol>
+        <li>In a bowl, combine the flour and salt. The butter should be soft enough to give when pressed, but not so
+          soft that it collapses. It should break up easily with your fingers without immediately forming a paste.</li>
+        <li>Cut the butter into small cubes, and add it to the flour and salt. Working quickly, break it up with your
+          fingers until the mixture resembles coarse crumbs with some pea-sized butter chunks.</li>
+        <li>Add 2 tablespoons of cold water and bring the dough together with your hands. Add more water only if needed
+          (start with 1/2 teaspoon), using no more than 3 teaspoons total. The dough will look dry and scraggly. Wrap it
+          tightly in plastic wrap or a reusable bag and refrigerate for 20 minutes to allow the flour to absorb
+          moisture.</li>
+        <li>On a lightly floured surface, roll the dough into a roughly 6×15 inch rectangle. Work quickly to avoid
+          overworking the dough.</li>
+        <li>Fold the top third of the dough down to the center, then fold the bottom third up over it. Give the dough a
+          quarter turn and roll it out again to a 6×15 inch rectangle. Fold the same way, cover, and chill for 1 hour.
+        </li>
+        <li>While the dough is resting, prepare the filling. Dissolve the sugar into 1 cup of hot water and allow it to
+          cool to room temperature. Whisk together the evaporated milk, eggs, and vanilla, then whisk in the cooled
+          sugar water. Strain the mixture through a fine mesh strainer into a measuring cup or pitcher. You should have
+          about 2 to 2¼ cups of custard.</li>
+        <li>Preheat the oven to 375°F (190°C) and position a rack in the lower third of the oven.</li>
+        <li>Roll the dough out to 0.2 inch (5mm) thickness and cut out 4-inch circles to fit mini tart tins or a shallow
+          nonstick muffin pan. Leave a slight overhang of dough, as the shells will shrink during baking. Re-roll the
+          scraps and cut more circles until you have around 16.</li>
+        <li>Evenly fill the tart shells about three-quarters full. If you left enough dough around the top, fill just up
+          to the point where the dough curves outward.</li>
+        <li>Once filled, carefully transfer the pan to the oven. Immediately reduce the heat to 350°F (180°C) and bake
+          for 26–29 minutes, until the filling is just set. If a toothpick can stand upright in the center, they are
+          done.</li>
+        <li>Allow the tarts to cool for at least 10 minutes before serving.</li>
+      </ol>
 
     </div>
 
     <div class="nutrition">
       <h2>Nutrition Facts</h2>
       <p>Nutrition Information
-Per Serving (Serves 16)
-<p>Calories: 180 kcal (9%)</p>
-<p>Carbohydrates: 19 g (6%)</p>
-<p>Protein: 3 g (6%)</p>
-<p>Fat: 10 g (15%)</p>
-<p>Saturated Fat: 6 g (30%)</p>
-<p>Trans Fat: 1 g</p>
-<p>Cholesterol: 56 mg (19%)</p>
-<p>Sodium: 41 mg (2%)</p>
-<p>Potassium: 55 mg (2%)</p>
-<p>Fiber: 1 g (4%)</p>
-<p>Sugar: 7 g (8%)</p>
-<p>Vitamin A: 326 IU (7%)</p>
-<p>Vitamin C: 1 mg (1%)</p>
-<p>Calcium: 31 mg (3%)</p>
-<p>Iron: 1 mg (6%)</p>
-</div>
+        Per Serving (Serves 16)
+      <p>Calories: 180 kcal (9%)</p>
+      <p>Carbohydrates: 19 g (6%)</p>
+      <p>Protein: 3 g (6%)</p>
+      <p>Fat: 10 g (15%)</p>
+      <p>Saturated Fat: 6 g (30%)</p>
+      <p>Trans Fat: 1 g</p>
+      <p>Cholesterol: 56 mg (19%)</p>
+      <p>Sodium: 41 mg (2%)</p>
+      <p>Potassium: 55 mg (2%)</p>
+      <p>Fiber: 1 g (4%)</p>
+      <p>Sugar: 7 g (8%)</p>
+      <p>Vitamin A: 326 IU (7%)</p>
+      <p>Vitamin C: 1 mg (1%)</p>
+      <p>Calcium: 31 mg (3%)</p>
+      <p>Iron: 1 mg (6%)</p>
+    </div>
   </section>
-
+  <script src="../backendjs/recipe-scaling.js"></script>
 </body>
+
 </html>
