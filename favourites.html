@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourites</title>
+    <link rel="stylesheet" href="homepage.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <div class="nav-left">
+         <ul class="nav-links">
+        <li><a href="homepage.html">Homepage</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="favourites.html">Favorites</a></li>
+         </ul>
+         </div>
+         <div class="nav-right">
+        <input type="text" placeholder="Search..." class="search-bar" />
+
+        </div>
+        </nav> 
+    </header>
+    <main>
+    <section class="recipe-list">
+    <h2>FAVORITES</h2>
+    <h3>Your favourite recipes</h3>
+    <div class="recipe-grid" id="favoritesList"></div>
+    </section>
+    <button class="back-btn" onclick="window.location.href='recipes.html'">
+      ← Back to Recipes 
+    </button>
+    </main>
+<script src="favorites.js"></script> 
+</body>
+</html>
