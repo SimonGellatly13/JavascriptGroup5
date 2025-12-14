@@ -370,10 +370,10 @@ h2 {
 .recipe-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .recipe-card .fav-btn {
-  margin-top: auto;
   align-self: center;
 }
 
