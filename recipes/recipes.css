@@ -104,6 +104,27 @@ body {
 }
 
 
+.ingredients-card li {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-left: 28px;
+}
+
+.ingredients-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: green;
+  font-weight: bold;
+  display: none;
+}
+
+.ingredients-card li.checked::before {
+  display: inline;
+}
+
+
 .instructions-section {
   display: flex;
   justify-content: center;
