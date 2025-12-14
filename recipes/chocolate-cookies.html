@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chocolate Cookies</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="recipes.css" />
 </head>
 
 <body>
 
 
-<nav class="navbar recipe-nav">
+  <nav class="navbar recipe-nav">
     <div class="navbar recipe-nav">
+      <div class="nav-left">
+        <a href="../homepage.html">Homepage</a>
+        <a href="../recipes.html">Recipes</a>
+        <a href="../categories.html">Categories</a>
+      </div>
+      <div class="nav-right">
+        <input type="text" placeholder="Search..." class="search-input">
+        <div class="search-results"></div>
+      </div>
+  </nav>
         <div class="nav-left">
             <a href="../homepage.html">Homepage</a>
             <a href="../recipes.html">Recipes</a>
@@ -33,9 +46,9 @@
     </div>
 </nav>
   </header>
-<button class="back-btn" onclick="window.location.href='../recipes.html'">
-  ← Back to Recipes
-</button>
+  <button class="back-btn" onclick="window.location.href='../recipes.html'">
+    ← Back to Recipes
+  </button>
   <section class="recipe-title">
     <h1>Chocolate Cookies</h1>
     <p class="subtitle">
@@ -52,21 +65,26 @@
     <div class="recipe-right">
 
       <div class="recipe-controls">
-        <button class="btn">Serves ▼</button>
+        <label for="scale">Amount of Cookies:</label>
+        <select id="scale" class="btn" onchange="scaleIngredients()">
+          <option value="1">24</option>
+          <option value="2">48</option>
+          <option value="0.5">12</option>
+        </select>
         <button class="btn toggle">Metric - US</button>
       </div>
 
-      
+
       <div class="ingredients-card">
         <h2>INGREDIENTS</h2>
         <ul>
-          <li>¾ cup (170 grams) unsalted butter , at room temperature</li>
-          <li>1 ½ cup (300 grams) granulated sugar</li>
-          <li>2 large eggs</li>
-          <li>2 teaspoons vanilla extract</li>
-          <li>⅔ cup (60 grams) unsweetened cocoa powder</li>
-          <li>1 teaspoon baking soda</li>
-          <li>½ teaspoon salt</li>
+          <li><span class="amount" data-base="0.75">¾</span> cup (170 grams) unsalted butter, at room temperature</li>
+          <li><span class="amount" data-base="1.5">1 ½</span> cup (300 grams) granulated sugar</li>
+          <li><span class="amount" data-base="2">2</span> large eggs</li>
+          <li><span class="amount" data-base="2">2</span> teaspoons vanilla extract</li>
+          <li><span class="amount" data-base="0.667">⅔</span> cup (60 grams) unsweetened cocoa powder</li>
+          <li><span class="amount" data-base="1">1</span> teaspoon baking soda</li>
+          <li><span class="amount" data-base="0.5">½</span> teaspoon salt</li>
         </ul>
       </div>
     </div>
@@ -76,41 +94,47 @@
     <div class="instructions">
       <h2>INSTRUCTIONS</h2>
       <ol>
-  <li>Preheat oven to 350°F. Line a sheet pan with parchment paper.</li>
-  <li>In the bowl of a stand mixer fitted with a paddle attachment, beat the butter and sugar on medium-high speed until light and creamy, about 4 minutes.</li>
-  <li>Add the eggs one at a time, mixing after each addition. Add the vanilla.</li>
-  <li>In a separate bowl, sift together the flour, cocoa powder, baking soda, and salt.</li>
-  <li>Add the dry ingredients to the mixer and mix until just combined. Scrape down the bowl to ensure the batter is evenly mixed.</li>
-  <li>Scoop dough by the rounded tablespoon (or use a #40 1.5 Tbsp cookie scoop) onto the prepared sheet pan.</li>
-  <li>Bake until edges are crisp and the tops are just barely set (no longer wet), about 9 minutes. Baking times may vary based on your oven and cookie size.</li>
-  <li>Immediately sprinkle with coarse sugar or salt while cookies are still hot.</li>
-  <li>If cookies are misshapen, use a spatula to gently push them back into a circle.</li>
-  <li>Let cookies cool on the pan for a few minutes, then transfer to a wire rack to cool completely.</li>
-  <li>Repeat with remaining cookie dough.</li>
-  <li>Store the cookies in an airtight container at room temperature for several days.</li>
-</ol>
+        <li>Preheat oven to 350°F. Line a sheet pan with parchment paper.</li>
+        <li>In the bowl of a stand mixer fitted with a paddle attachment, beat the butter and sugar on medium-high speed
+          until light and creamy, about 4 minutes.</li>
+        <li>Add the eggs one at a time, mixing after each addition. Add the vanilla.</li>
+        <li>In a separate bowl, sift together the flour, cocoa powder, baking soda, and salt.</li>
+        <li>Add the dry ingredients to the mixer and mix until just combined. Scrape down the bowl to ensure the batter
+          is evenly mixed.</li>
+        <li>Scoop dough by the rounded tablespoon (or use a #40 1.5 Tbsp cookie scoop) onto the prepared sheet pan.</li>
+        <li>Bake until edges are crisp and the tops are just barely set (no longer wet), about 9 minutes. Baking times
+          may vary based on your oven and cookie size.</li>
+        <li>Immediately sprinkle with coarse sugar or salt while cookies are still hot.</li>
+        <li>If cookies are misshapen, use a spatula to gently push them back into a circle.</li>
+        <li>Let cookies cool on the pan for a few minutes, then transfer to a wire rack to cool completely.</li>
+        <li>Repeat with remaining cookie dough.</li>
+        <li>Store the cookies in an airtight container at room temperature for several days.</li>
+      </ol>
 
     </div>
 
     <div class="nutrition">
       <h2>Nutrition Facts</h2>
       <p>Nutrition Information
-Per Serving (Serves 24 cookies)
-<p>Calories: 192 kcal</p>
-<p>Carbohydrates: 26 g</p>
-<p>Protein: 3 g</p>
-<p>Fat: 9 g</p>
-<p>Saturated Fat: 6 g</p>
-<p>Cholesterol: 29 mg</p>
-<p>Sodium: 102 mg</p>
-<p>Potassium: 97 mg</p>
-<p>Fiber: 2 g</p>
-<p>Sugar: 15 g</p>
-<p>Vitamin A: 201 IU</p>
-<p>Calcium: 13 mg</p>
-<p>Iron: 1 mg</p>
-</div>
+        Per Serving (Serves 24 cookies)
+      <p>Calories: 192 kcal</p>
+      <p>Carbohydrates: 26 g</p>
+      <p>Protein: 3 g</p>
+      <p>Fat: 9 g</p>
+      <p>Saturated Fat: 6 g</p>
+      <p>Cholesterol: 29 mg</p>
+      <p>Sodium: 102 mg</p>
+      <p>Potassium: 97 mg</p>
+      <p>Fiber: 2 g</p>
+      <p>Sugar: 15 g</p>
+      <p>Vitamin A: 201 IU</p>
+      <p>Calcium: 13 mg</p>
+      <p>Iron: 1 mg</p>
+    </div>
   </section>
-
+  <script src="../backendjs/recipe-scaling.js"></script>
+  <script src="../backendjs/ingredients-checklist.js"></script>
+  <script src="../backendjs/search-bar.js"></script>
 </body>
+
 </html>

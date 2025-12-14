@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mango Cheesecake</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="recipes.css" />
 </head>
 
 <body>
 
 
-<nav class="navbar recipe-nav">
+  <nav class="navbar recipe-nav">
     <div class="navbar recipe-nav">
-        <div class="nav-left">
-            <a href="../homepage.html">Homepage</a>
-            <a href="../recipes.html">Recipes</a>
-            <a href="../categories.html">Categories</a>
+      <div class="nav-left">
+        <a href="../homepage.html">Homepage</a>
+        <a href="../recipes.html">Recipes</a>
+        <a href="../categories.html">Categories</a>
             <a href="../favourites.html">Favorites</a>
-            </div>
-            <div class="nav-right">
-      <input type="text" placeholder="Keyword..." class="search-input">
-      <select class="category-select">
-        <option>Filter by category</option>
-        <option>Mousses</option>
-        <option>Tarts</option>
-        <option>Cakes</option>
-        <option>Cookies</option>
-        <option>Cheesecakes</option>
-      </select>
-    </div>
-</nav>
+      </div>
+      <div class="nav-right">
+        <input type="text" placeholder="Search..." class="search-input">
+        <div class="search-results"></div>
+      </div>
+  </nav>
   </header>
-<button class="back-btn" onclick="window.location.href='../recipes.html'">
-  ← Back to Recipes
-</button>
+  <button class="back-btn" onclick="window.location.href='../recipes.html'">
+    ← Back to Recipes
+  </button>
   <section class="recipe-title">
     <h1>Mango Cheesecake</h1>
     <p class="subtitle">
-      Super creamy and smooth Mango Cheesecake with a shortbread cookie crust, topped with sweet, tangy mango curd and slices of fresh mango. It’s like sunshine on a plate!
+      Super creamy and smooth Mango Cheesecake with a shortbread cookie crust, topped with sweet, tangy mango curd and
+      slices of fresh mango. It’s like sunshine on a plate!
     </p>
   </section>
 
@@ -52,31 +49,39 @@
     <div class="recipe-right">
 
       <div class="recipe-controls">
-        <button class="btn">Serves ▼</button>
+        <label for="scale">Amount of Cakes:</label>
+        <select id="scale" class="btn" onchange="scaleIngredients()">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="0.5">Half</option>
+        </select>
         <button class="btn toggle">Metric - US</button>
       </div>
 
-      
+
       <div class="ingredients-card">
         <h2>INGREDIENTS</h2>
-       <ul>
-        CHEESECAKE BASE:
-  <li>200 g shortbread cookies (makes about 1 1/2 cups crumbs) *</li>
-  <li>3 tablespoons butter, melted (43 g)</li>
-  FILLING:
-  <li>1 1/2 pounds cream cheese (680 g)</li>
-  <li>1 cup sugar (use 1 1/4 cups if mangoes are not very sweet) — 200 g</li>
-  <li>3 tablespoons cornstarch (21 g)</li>
-  <li>4 large eggs</li>
-  <li>1 tablespoon lime juice</li>
-  <li>2 cups mango purée (from about 3 large mangoes) — 15 oz</li>
-  <li>1/8 teaspoon salt</li>
-  TOPPINGS:
-  <li>3/4 cup mango curd</li>
-  <li>Sliced mangoes, for decorating</li>
-  <li>Mini sugar pearl sprinkles, for decorating</li>
-</ul>
+        <ul>
+          <strong>CHEESECAKE BASE:</strong>
+          <li><span class="amount" data-base="200">200</span> g shortbread cookies (makes about 1 1/2 cups crumbs) *
+          </li>
+          <li><span class="amount" data-base="3">3</span> tablespoons butter, melted (43 g)</li>
 
+          <strong>FILLING:</strong>
+          <li><span class="amount" data-base="1.5">1 1/2</span> pounds cream cheese (680 g)</li>
+          <li><span class="amount" data-base="1">1</span> cup sugar (use <span class="amount" data-base="1.25">1
+              1/4</span> cups if mangoes are not very sweet) — 200 g</li>
+          <li><span class="amount" data-base="3">3</span> tablespoons cornstarch (21 g)</li>
+          <li><span class="amount" data-base="4">4</span> large eggs</li>
+          <li><span class="amount" data-base="1">1</span> tablespoon lime juice</li>
+          <li><span class="amount" data-base="2">2</span> cups mango purée (from about 3 large mangoes) — 15 oz</li>
+          <li><span class="amount" data-base="0.125">1/8</span> teaspoon salt</li>
+
+          <strong>TOPPINGS:</strong>
+          <li><span class="amount" data-base="0.75">3/4</span> cup mango curd</li>
+          <li>Sliced mangoes, for decorating</li>
+          <li>Mini sugar pearl sprinkles, for decorating</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -85,50 +90,62 @@
     <div class="instructions">
       <h2>INSTRUCTIONS</h2>
       <ol>
-  <li>Adjust the oven rack to the lower-middle position and preheat the oven to 325°F (163°C).</li>
-  <li>Make the cheesecake base: Pulse the shortbread cookies in a food processor until they become fine crumbs.</li>
-  <li>Add the melted butter and pulse until the mixture resembles wet sand.</li>
-  <li>Press the mixture firmly into the bottom of a 9-inch springform pan.</li>
-  <li>Bake the crust for about 8 minutes, or until golden and fragrant. Remove from the oven and let cool.</li>
-  <li>Make the filling: Using a stand mixer with the paddle attachment or a hand mixer, beat the cream cheese until light and fluffy (about 2 minutes). Scrape down the bowl.</li>
-  <li>Add the sugar and cornstarch and beat for another 2 minutes, scraping the bowl halfway through.</li>
-  <li>Add the eggs one at a time, mixing on low speed for 20 seconds after each addition. Scrape down the bowl.</li>
-  <li>Add the mango purée, lime juice, and salt, and mix until fully combined.</li>
-  <li>Wrap the outside of the springform pan in 2 sheets of heavy-duty aluminum foil to prevent water from entering.</li>
-  <li>Brush the sides of the pan with butter or spray with nonstick spray.</li>
-  <li>Pour the cheesecake batter over the prebaked crust and smooth the surface. Tap the pan on the counter several times to release air bubbles.</li>
-  <li>Place the cheesecake pan inside a larger roasting pan. Fill the larger pan with hot water until it reaches halfway up the sides of the springform pan.</li>
-  <li>Bake for about 1 1/2 hours, or until the sides are puffy and golden and the center is slightly jiggly.</li>
-  <li>Place the cheesecake on a cooling rack for 5 minutes, then run a knife around the edges to loosen it. Allow it to cool completely to room temperature (about 3 hours).</li>
-  <li>Pour the mango curd over the cooled cheesecake and smooth the top.</li>
-  <li>Wrap the cheesecake tightly in plastic wrap and refrigerate for at least 6 hours, or until cold and fully set.</li>
-  <li>To serve: Carefully remove the springform pan sides. Slide a thin metal spatula between the crust and the pan bottom to transfer cheesecake to a serving platter.</li>
-  <li>If your pan bottom has a raised lip, you may leave it on and place it directly on the serving plate.</li>
-  <li>Decorate with sliced mango if desired.</li>
-</ol>
+        <li>Adjust the oven rack to the lower-middle position and preheat the oven to 325°F (163°C).</li>
+        <li>Make the cheesecake base: Pulse the shortbread cookies in a food processor until they become fine crumbs.
+        </li>
+        <li>Add the melted butter and pulse until the mixture resembles wet sand.</li>
+        <li>Press the mixture firmly into the bottom of a 9-inch springform pan.</li>
+        <li>Bake the crust for about 8 minutes, or until golden and fragrant. Remove from the oven and let cool.</li>
+        <li>Make the filling: Using a stand mixer with the paddle attachment or a hand mixer, beat the cream cheese
+          until light and fluffy (about 2 minutes). Scrape down the bowl.</li>
+        <li>Add the sugar and cornstarch and beat for another 2 minutes, scraping the bowl halfway through.</li>
+        <li>Add the eggs one at a time, mixing on low speed for 20 seconds after each addition. Scrape down the bowl.
+        </li>
+        <li>Add the mango purée, lime juice, and salt, and mix until fully combined.</li>
+        <li>Wrap the outside of the springform pan in 2 sheets of heavy-duty aluminum foil to prevent water from
+          entering.</li>
+        <li>Brush the sides of the pan with butter or spray with nonstick spray.</li>
+        <li>Pour the cheesecake batter over the prebaked crust and smooth the surface. Tap the pan on the counter
+          several times to release air bubbles.</li>
+        <li>Place the cheesecake pan inside a larger roasting pan. Fill the larger pan with hot water until it reaches
+          halfway up the sides of the springform pan.</li>
+        <li>Bake for about 1 1/2 hours, or until the sides are puffy and golden and the center is slightly jiggly.</li>
+        <li>Place the cheesecake on a cooling rack for 5 minutes, then run a knife around the edges to loosen it. Allow
+          it to cool completely to room temperature (about 3 hours).</li>
+        <li>Pour the mango curd over the cooled cheesecake and smooth the top.</li>
+        <li>Wrap the cheesecake tightly in plastic wrap and refrigerate for at least 6 hours, or until cold and fully
+          set.</li>
+        <li>To serve: Carefully remove the springform pan sides. Slide a thin metal spatula between the crust and the
+          pan bottom to transfer cheesecake to a serving platter.</li>
+        <li>If your pan bottom has a raised lip, you may leave it on and place it directly on the serving plate.</li>
+        <li>Decorate with sliced mango if desired.</li>
+      </ol>
 
     </div>
 
     <div class="nutrition">
       <h2>Nutrition Facts</h2>
       <p>Nutrition Information
-Per Serving (Serves 12)
-<p>Calories: 412 kcal</p>
-<p>Carbohydrates: 42 g</p>
-<p>Protein: 7 g</p>
-<p>Fat: 25 g</p>
-<p>Saturated Fat: 15 g</p>
-<p>Cholesterol: 124 mg</p>
-<p>Sodium: 213 mg</p>
-<p>Potassium: 185 mg</p>
-<p>Fiber: 1 g</p>
-<p>Sugar: 34 g</p>
-<p>Vitamin A: 875 IU</p>
-<p>Vitamin C: 8 mg</p>
-<p>Calcium: 115 mg</p>
-<p>Iron: 1 mg</p>
-</div>
+        Per Serving (Serves 12)
+      <p>Calories: 412 kcal</p>
+      <p>Carbohydrates: 42 g</p>
+      <p>Protein: 7 g</p>
+      <p>Fat: 25 g</p>
+      <p>Saturated Fat: 15 g</p>
+      <p>Cholesterol: 124 mg</p>
+      <p>Sodium: 213 mg</p>
+      <p>Potassium: 185 mg</p>
+      <p>Fiber: 1 g</p>
+      <p>Sugar: 34 g</p>
+      <p>Vitamin A: 875 IU</p>
+      <p>Vitamin C: 8 mg</p>
+      <p>Calcium: 115 mg</p>
+      <p>Iron: 1 mg</p>
+    </div>
   </section>
-
+  <script src="../backendjs/recipe-scaling.js"></script>
+  <script src="../backendjs/ingredients-checklist.js"></script>
+  <script src="../backendjs/search-bar.js"></script>
 </body>
+
 </html>

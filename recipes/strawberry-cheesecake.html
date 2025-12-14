@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Strawberry Cheesecake</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="recipes.css" />
 </head>
 
 <body>
 
 
-<nav class="navbar recipe-nav">
+  <nav class="navbar recipe-nav">
     <div class="navbar recipe-nav">
-        <div class="nav-left">
-            <a href="../homepage.html">Homepage</a>
-            <a href="../recipes.html">Recipes</a>
-            <a href="../categories.html">Categories</a>
+      <div class="nav-left">
+        <a href="../homepage.html">Homepage</a>
+        <a href="../recipes.html">Recipes</a>
+        <a href="../categories.html">Categories</a>
              <a href="../favourites.html">Favorites</a>
-            </div>
-            <div class="nav-right">
-      <input type="text" placeholder="Keyword..." class="search-input">
-      <select class="category-select">
-        <option>Filter by category</option>
-        <option>Mousses</option>
-        <option>Tarts</option>
-        <option>Cakes</option>
-        <option>Cookies</option>
-        <option>Cheesecakes</option>
-      </select>
-    </div>
-</nav>
+      </div>
+      <div class="nav-right">
+        <input type="text" placeholder="Keyword..." class="search-input">
+        <select class="category-select">
+          <option>Filter by category</option>
+          <option>Mousses</option>
+          <option>Tarts</option>
+          <option>Cakes</option>
+          <option>Cookies</option>
+          <option>Cheesecakes</option>
+        </select>
+      </div>
+  </nav>
   </header>
-<button class="back-btn" onclick="window.location.href='../recipes.html'">
-  ← Back to Recipes
-</button>
+  <button class="back-btn" onclick="window.location.href='../recipes.html'">
+    ← Back to Recipes
+  </button>
   <section class="recipe-title">
     <h1>Strawberry Cheesecake</h1>
     <p class="subtitle">
-      My strawberry cheesecake recipe makes a smooth, creamy vanilla cheesecake crowned with a brightly flavored fresh strawberry topping. It's 100% from scratch and made WITHOUT a water bath!
+      My strawberry cheesecake recipe makes a smooth, creamy vanilla cheesecake crowned with a brightly flavored fresh
+      strawberry topping. It's 100% from scratch and made WITHOUT a water bath!
     </p>
   </section>
 
@@ -52,56 +56,73 @@
     <div class="recipe-right">
 
       <div class="recipe-controls">
-        <button class="btn">Serves ▼</button>
+        <label for="scale">Amount of Cakes:</label>
+        <select id="scale" class="btn" onchange="scaleIngredients()">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="0.5">Half</option>
+        </select>
         <button class="btn toggle">Metric - US</button>
       </div>
 
-      
+
       <div class="ingredients-card">
         <h2>INGREDIENTS</h2>
         <ul>
-            CRUST:
-          <li>1 ½ cups (170 g) graham cracker crumbs</li>
-<li>2 Tablespoons granulated sugar</li>
-<li>1 Tablespoon light brown sugar, firmly packed</li>
-<li>5 Tablespoons (74 g) unsalted butter, melted</li>
-          CHEESECAKE:
-          <li>24 oz (680 g) cream cheese, softened (full-fat)</li>
-<li>1 cup (200 g) granulated sugar</li>
-<li>½ cup sour cream</li>
-<li>1 teaspoon vanilla extract</li>
-<li>3 large eggs, lightly beaten (room temperature preferred)</li>
-          TOPPING:
-          <li>1 ½ lb fresh or frozen strawberries, rinsed, hulled, and quartered</li>
-<li>¼ cup (50 g) granulated sugar</li>
-<li>1 ½ Tablespoons cornstarch</li>
-<li>1 Tablespoon lemon juice</li>
-<li>2 Tablespoons water</li>
-<li>1 Tablespoon butter (salted or unsalted)</li>
+          <strong>CRUST:</strong>
+          <li><span class="amount" data-base="1.5">1 ½</span> cups (170 g) graham cracker crumbs</li>
+          <li><span class="amount" data-base="2">2</span> Tablespoons granulated sugar</li>
+          <li><span class="amount" data-base="1">1</span> Tablespoon light brown sugar, firmly packed</li>
+          <li><span class="amount" data-base="5">5</span> Tablespoons (74 g) unsalted butter, melted</li>
 
+          <strong>CHEESECAKE:</strong>
+          <li><span class="amount" data-base="24">24</span> oz (680 g) cream cheese, softened (full-fat)</li>
+          <li><span class="amount" data-base="1">1</span> cup (200 g) granulated sugar</li>
+          <li><span class="amount" data-base="0.5">1/2</span> cup sour cream</li>
+          <li><span class="amount" data-base="1">1</span> teaspoon vanilla extract</li>
+          <li><span class="amount" data-base="3">3</span> large eggs, lightly beaten (room temperature preferred)</li>
+
+
+          <strong>TOPPING:</strong>
+          <li><span class="amount" data-base="1.5">1 ½</span> lb fresh or frozen strawberries, rinsed, hulled, and
+            quartered</li>
+          <li><span class="amount" data-base="0.25">1/4</span> cup (50 g) granulated sugar</li>
+          <li><span class="amount" data-base="1.5">1 ½</span> Tablespoons cornstarch</li>
+          <li><span class="amount" data-base="1">1</span> Tablespoon lemon juice</li>
+          <li><span class="amount" data-base="2">2</span> Tablespoons water</li>
+          <li><span class="amount" data-base="1">1</span> Tablespoon butter (salted or unsalted)</li>
         </ul>
-    </div>
+      </div>
   </section>
 
   <section class="instructions-section">
     <div class="instructions">
       <h2>INSTRUCTIONS</h2>
       <ol>
-      <li>Preheat your oven to 325°F (160°C).</li>
-<li>In a medium bowl, stir together the graham cracker crumbs, granulated sugar, and brown sugar.</li>
-<li>Stir in the melted butter until all the crumbs are evenly moistened.</li>
-<li>Press the mixture into the bottom and up the sides of a 9-inch springform pan, using the bottom of a glass to help compact it. Set aside.</li>
-<li>In a large mixing bowl, combine the softened cream cheese and sugar with an electric mixer on medium-low speed until smooth and creamy. Scrape the sides and bottom of the bowl as needed.</li>
-<li>Stir in the sour cream and vanilla extract until just combined.</li>
-<li>Add the eggs one at a time, stirring until just combined after each addition. Do not overmix.</li>
-<li>Pour the cheesecake batter evenly into the prepared pan.</li>
-<li>Bake at 325°F (160°C) for 45–50 minutes. The center should be slightly jiggly, but the edges should look set.</li>
-<li>Allow the cheesecake to cool at room temperature until no longer warm. Then refrigerate for at least 6 hours, preferably overnight. Do not remove the springform collar until ready to serve.</li>
-<li>In a small saucepan, whisk together the sugar and cornstarch. Add half of the strawberries, the water, and the lemon juice.</li>
-<li>Cook over medium-low heat, stirring constantly, until the strawberries release their juices, soften, and the sauce thickens.</li>
-<li>Remove from heat and add the remaining strawberries and butter. Stir until the butter melts and everything is combined.</li>
-<li>Transfer the topping to a heatproof bowl and cool until it is no longer warm (refrigerate to speed this up) before pouring over the chilled cheesecake.</li>
-<li>Serve immediately for a looser topping, or chill the topping on the cheesecake for at least 1 hour for cleaner slices.</li>
+        <li>Preheat your oven to 325°F (160°C).</li>
+        <li>In a medium bowl, stir together the graham cracker crumbs, granulated sugar, and brown sugar.</li>
+        <li>Stir in the melted butter until all the crumbs are evenly moistened.</li>
+        <li>Press the mixture into the bottom and up the sides of a 9-inch springform pan, using the bottom of a glass
+          to help compact it. Set aside.</li>
+        <li>In a large mixing bowl, combine the softened cream cheese and sugar with an electric mixer on medium-low
+          speed until smooth and creamy. Scrape the sides and bottom of the bowl as needed.</li>
+        <li>Stir in the sour cream and vanilla extract until just combined.</li>
+        <li>Add the eggs one at a time, stirring until just combined after each addition. Do not overmix.</li>
+        <li>Pour the cheesecake batter evenly into the prepared pan.</li>
+        <li>Bake at 325°F (160°C) for 45–50 minutes. The center should be slightly jiggly, but the edges should look
+          set.</li>
+        <li>Allow the cheesecake to cool at room temperature until no longer warm. Then refrigerate for at least 6
+          hours, preferably overnight. Do not remove the springform collar until ready to serve.</li>
+        <li>In a small saucepan, whisk together the sugar and cornstarch. Add half of the strawberries, the water, and
+          the lemon juice.</li>
+        <li>Cook over medium-low heat, stirring constantly, until the strawberries release their juices, soften, and the
+          sauce thickens.</li>
+        <li>Remove from heat and add the remaining strawberries and butter. Stir until the butter melts and everything
+          is combined.</li>
+        <li>Transfer the topping to a heatproof bowl and cool until it is no longer warm (refrigerate to speed this up)
+          before pouring over the chilled cheesecake.</li>
+        <li>Serve immediately for a looser topping, or chill the topping on the cheesecake for at least 1 hour for
+          cleaner slices.</li>
 
       </ol>
     </div>
@@ -109,27 +130,30 @@
     <div class="nutrition">
       <h2>Nutrition Facts</h2>
       <p>Nutrition Information
-Per Serving (Serves 12)
-<p>Serving: 1 serving</p>
-<p>Calories: 443kcal</p>
-<p>Carbohydrates: 41g</p>
-<p>Protein: 6g</p>
-<p>Fat: 29g</p>
-<p>Saturated Fat: 17g</p>
-<p>Polyunsaturated Fat: 1g</p>
-<p>Monounsaturated Fat: 8g</p>
-<p>Trans Fat: 0.2g</p>
-<p>Cholesterol: 119mg</p>
-<p>Sodium: 275mg</p>
-<p>Potassium: 213mg</p>
-<p>Fiber: 2g</p>
-<p>Sugar: 32g</p>
-<p>Vitamin A: 1062IU</p>
-<p>Vitamin C: 34mg</p>
-<p>Calcium: 91mg</p>
-<p>Iron: 1mg</p>
-</div>
+        Per Serving (Serves 12)
+      <p>Serving: 1 serving</p>
+      <p>Calories: 443kcal</p>
+      <p>Carbohydrates: 41g</p>
+      <p>Protein: 6g</p>
+      <p>Fat: 29g</p>
+      <p>Saturated Fat: 17g</p>
+      <p>Polyunsaturated Fat: 1g</p>
+      <p>Monounsaturated Fat: 8g</p>
+      <p>Trans Fat: 0.2g</p>
+      <p>Cholesterol: 119mg</p>
+      <p>Sodium: 275mg</p>
+      <p>Potassium: 213mg</p>
+      <p>Fiber: 2g</p>
+      <p>Sugar: 32g</p>
+      <p>Vitamin A: 1062IU</p>
+      <p>Vitamin C: 34mg</p>
+      <p>Calcium: 91mg</p>
+      <p>Iron: 1mg</p>
+    </div>
   </section>
-
+  <script src="../backendjs/recipe-scaling.js"></script>
+  <script src="../backendjs/ingredients-checklist.js"></script>
+  <script src="../backendjs/search-bar.js"></script>
 </body>
+
 </html>

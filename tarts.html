@@ -1,68 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dessert Categories</title>
   <link rel="stylesheet" href="homepage.css" />
 </head>
+
 <body>
   <header>
     <nav class="navbar">
-        <div class="nav-left">
-            <ul class="nav-links">
-                <li><a href="homepage.html">Homepage</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="categories.html">Categories</a></li>
-                <li><a href="favourites.html">Favorites</a></li>
+      <div class="nav-left">
+        <ul class="nav-links">
+          <li><a href="homepage.html">Homepage</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="categories.html">Categories</a></li>
+                  <li><a href="favourites.html">Favorites</a></li>
       </ul>
       </div>
       <div class="nav-right">
-      <input type="text" placeholder="Search..." class="search-bar" />
-      </div>
+        <input type="text" placeholder="Search..." class="search-input">
+        <div class="search-results"></div>
     </nav>
   </header>
 
   <main>
     <section class="categories">
-  <h2>Tarts</h2>
-  <h3>Browse by type</h3>
-  <div class="filter-bar">
-    <input type="text" id="categorySearch" placeholder="Keyword.." />
-    <select id="categoryFilter">
-      <option value="all">Filter options</option>
-      <option value="mousses">Mousses</option>
-      <option value="tarts">Tarts</option>
-      <option value="cake">Cakes</option>
-      <option value="cookies">Cookies</option>
-      <option value="cheesecakes">Cheesecakes</option>
-    </select>
-  </div>
- <div class="recipe-grid">
+      <h2>Tarts</h2>
+      <h3>Browse by type</h3>
+     
+      <div class="recipe-grid">
 
 
         <a href="recipes/tart.html" class="recipe-card">
           <img src="images/tart.png" alt="Tart">
           <p>Strawberry Tart</p>
         </a>
-         <a href="recipes/egg-tart.html" class="recipe-card">
+        <a href="recipes/egg-tart.html" class="recipe-card">
           <img src="images/egg-tart.png" alt="Tart">
           <p>Egg Tart</p>
         </a>
-        
+
         <a href="recipes/apple-tart.html" class="recipe-card">
           <img src="images/apple-tart.png" alt="Tart">
           <p>Apple Tart</p>
         </a>
-          <a href="recipes/pistachio-tart.html" class="recipe-card">
+        <a href="recipes/pistachio-tart.html" class="recipe-card">
           <img src="images/pistachio-tart.png" alt="Tart">
           <p>Pistachio Tart</p>
         </a>
- </div>
- </section>
- <button class="back-btn" onclick="window.location.href='categories.html'">
-  ← Back to Categories
-</button>
- </main>
- </body>
- </html>
+      </div>
+    </section>
+    <button class="back-btn" onclick="window.location.href='categories.html'">
+      ← Back to Categories
+    </button>
+  </main>
+  <script src="../backendjs/search-bar.js"></script>
+</body>
+
+</html>

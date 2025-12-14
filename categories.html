@@ -17,27 +17,18 @@
                 <li><a href="favourites.html">Favorites</a></li>
       </ul>
       </div>
+      <nav>
       <div class="nav-right">
-      <input type="text" placeholder="Search..." class="search-bar" />
-      </div>
+        <input type="text" placeholder="Search..." class="search-input">
+        <div class="search-results"></div>
     </nav>
   </header>
 
   <main>
     <section class="categories">
   <h2>Categories</h2>
-  <h3>Browse by type</h3>
-  <div class="filter-bar">
-    <input type="text" id="categorySearch" placeholder="Keyword.." />
-    <select id="categoryFilter">
-      <option value="all">Filter options</option>
-      <option value="mousses">Mousses</option>
-      <option value="tarts">Tarts</option>
-      <option value="cake">Cakes</option>
-      <option value="cookies">Cookies</option>
-      <option value="cheesecakes">Cheesecakes</option>
-    </select>
-  </div>
+  <h3>Browse by Type</h3>
+
 
   <div class="category-grid">
     <a href="mousses.html" class="recipe-card">
@@ -62,5 +53,6 @@
         </a>
 </section>
 </main>
+<script src="../backendjs/search-bar.js"></script>
 </body>
 </html>
