@@ -23,15 +23,8 @@
         <a href="../categories.html">Categories</a>
       </div>
       <div class="nav-right">
-        <input type="text" placeholder="Keyword..." class="search-input">
-        <select class="category-select">
-          <option>Filter by category</option>
-          <option>Mousses</option>
-          <option>Tarts</option>
-          <option>Cakes</option>
-          <option>Cookies</option>
-          <option>Cheesecakes</option>
-        </select>
+        <input type="text" placeholder="Search..." class="search-input">
+        <div class="search-results"></div>
       </div>
   </nav>
   </header>
@@ -69,7 +62,8 @@
         <h2>INGREDIENTS</h2>
         <ul>
           <strong>Chocolate Cake</strong>
-          <li><span class="amount" data-base="1.75">1 and 3/4</span> cups (219g) all-purpose flour (spooned & leveled)</li>
+          <li><span class="amount" data-base="1.75">1 and 3/4</span> cups (219g) all-purpose flour (spooned & leveled)
+          </li>
           <li><span class="amount" data-base="0.75">3/4</span> cup (65g) unsweetened natural cocoa powder*</li>
           <li><span class="amount" data-base="1.75">1 and 3/4</span> cups (350g) granulated sugar</li>
           <li><span class="amount" data-base="2">2</span> teaspoons baking soda</li>
@@ -83,10 +77,12 @@
           <li><span class="amount" data-base="2">2</span> teaspoons pure vanilla extract</li>
           <li><span class="amount" data-base="0.5">1/2</span> cup (120ml) hot water or coffee*</li>
           <li><span class="amount" data-base="2">2</span> (15 ounce) cans dark sweet cherries in heavy syrup*</li>
-          <li><span class="amount" data-base="2">2</span> Tablespoons cherry liquor (sold as kirsch or kirschwasser)*</li>
-          <strong>Ganache</strong> 
+          <li><span class="amount" data-base="2">2</span> Tablespoons cherry liquor (sold as kirsch or kirschwasser)*
+          </li>
+          <strong>Ganache</strong>
           <li><span class="amount" data-base="1">1</span> cup (240ml) heavy cream or heavy whipping cream</li>
-          <li><span class="amount" data-base="2">two 4-ounce</span> semi-sweet chocolate bars (226g), finely chopped</li>
+          <li><span class="amount" data-base="2">two 4-ounce</span> semi-sweet chocolate bars (226g), finely chopped
+          </li>
           <li>optional: <span class="amount" data-base="1">1</span> Tablespoon light corn syrup*</li>
           <strong>Whipped Cream</strong>
           <li><span class="amount" data-base="2">2</span> cups (480ml) cold heavy cream or heavy whipping cream</li>
@@ -160,6 +156,7 @@
     </div>
   </section>
   <script src="../backendjs/recipe-scaling.js"></script>
+  <script src="../backendjs/search-bar.js"></script>
 </body>
 
 </html>

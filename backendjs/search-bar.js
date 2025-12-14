@@ -36,9 +36,8 @@ if (searchInput && resultsContainer) {
       card.href = r.url;
       //styyling like card
       card.className = 'recipe-card';
-      //using image and name from json file
+      //using name from json file
       card.innerHTML = `
-        <img src="${r.image}" alt="${r.name}">
         <p>${r.name}</p>
       `;
       //adding results to page
