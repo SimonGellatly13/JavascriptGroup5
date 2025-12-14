@@ -8,129 +8,273 @@
 </head>
 <body>
 
-  <header>
-    <nav class="navbar">
-        <div class="nav-left">
+<header>
+  <nav class="navbar">
+    <div class="nav-left">
       <ul class="nav-links">
         <li><a href="homepage.html">Homepage</a></li>
         <li><a href="recipes.html">Recipes</a></li>
         <li><a href="categories.html">Categories</a></li>
+        <li><a href="favourites.html">Favorites</a></li>
       </ul>
-       </div>
-      <div class="nav-right">
+    </div>
+    <div class="nav-right">
       <input type="text" class="search-bar" placeholder="Search..." />
-      </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
-  <main>
-    <section class="recipe-list">
-      <h2>RECIPES</h2>
-      <h3>Browse All Desserts</h3>
+<main>
+  <section class="recipe-list">
+    <h2>RECIPES</h2>
+    <h3>Browse All Desserts</h3>
 
-      <div class="recipe-grid">
+    <div class="recipe-grid">
 
-        <a href="recipes/cookies.html" class="recipe-card">
+      <div class="recipe-card">
+        <a href="recipes/cookies.html">
           <img src="images/cookies.png" alt="Cookies">
           <p>Classic Chocolate Chip Cookies</p>
         </a>
+        <button class="fav-btn"
+          data-id="choc-chip-cookies"
+          data-name="Classic Chocolate Chip Cookies"
+          data-url="recipes/cookies.html"
+          data-img="images/cookies.png">☆ Save</button>
+      </div>
 
-        <a href="recipes/mousse.html" class="recipe-card">
+      <div class="recipe-card">
+        <a href="recipes/mousse.html">
           <img src="images/mousse.png" alt="Mousse">
           <p>Chocolate Mousse</p>
         </a>
+        <button class="fav-btn"
+          data-id="chocolate-mousse"
+          data-name="Chocolate Mousse"
+          data-url="recipes/mousse.html"
+          data-img="images/mousse.png">☆ Save</button>
+      </div>
 
-        <a href="recipes/tart.html" class="recipe-card">
+      <div class="recipe-card">
+        <a href="recipes/tart.html">
           <img src="images/tart.png" alt="Tart">
           <p>Strawberry Tart</p>
         </a>
+        <button class="fav-btn"
+          data-id="strawberry-tart"
+          data-name="Strawberry Tart"
+          data-url="recipes/tart.html"
+          data-img="images/tart.png">☆ Save</button>
+      </div>
 
-        <a href="recipes/cheesecake.html" class="recipe-card">
+      <div class="recipe-card">
+        <a href="recipes/cheesecake.html">
           <img src="images/cheesecake.png" alt="Cheesecake">
           <p>New York Cheesecake</p>
         </a>
+        <button class="fav-btn"
+          data-id="ny-cheesecake"
+          data-name="New York Cheesecake"
+          data-url="recipes/cheesecake.html"
+          data-img="images/cheesecake.png">☆ Save</button>
+      </div>
 
-        <a href="recipes/strawberry-cake.html" class="recipe-card">
+      <div class="recipe-card">
+        <a href="recipes/strawberry-cake.html">
           <img src="images/cake-slice.png" alt="Cake">
           <p>Strawberry Cake</p>
         </a>
-        
-        <a href="recipes/chocolate-cake.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="strawberry-cake"
+          data-name="Strawberry Cake"
+          data-url="recipes/strawberry-cake.html"
+          data-img="images/cake-slice.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/chocolate-cake.html">
           <img src="images/chocolate-cake.png" alt="Cake">
           <p>Chocolate Cake</p>
         </a>
-        
-        <a href="recipes/chocolate-cookies.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="chocolate-cake"
+          data-name="Chocolate Cake"
+          data-url="recipes/chocolate-cake.html"
+          data-img="images/chocolate-cake.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/chocolate-cookies.html">
           <img src="images/chocolate-cookies.png" alt="Cookies">
           <p>Chocolate Cookies</p>
         </a>
-        
-        <a href="recipes/tiramisu.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="chocolate-cookies"
+          data-name="Chocolate Cookies"
+          data-url="recipes/chocolate-cookies.html"
+          data-img="images/chocolate-cookies.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/tiramisu.html">
           <img src="images/tiramisu.png" alt="Cake">
           <p>Tiramisu Cake</p>
         </a>
-        
-        <a href="recipes/egg-tart.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="tiramisu"
+          data-name="Tiramisu Cake"
+          data-url="recipes/tiramisu.html"
+          data-img="images/tiramisu.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/egg-tart.html">
           <img src="images/egg-tart.png" alt="Tart">
           <p>Egg Tart</p>
         </a>
-        
-        <a href="recipes/apple-tart.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="egg-tart"
+          data-name="Egg Tart"
+          data-url="recipes/egg-tart.html"
+          data-img="images/egg-tart.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/apple-tart.html">
           <img src="images/apple-tart.png" alt="Tart">
           <p>Apple Tart</p>
         </a>
-        
-        <a href="recipes/strawberry-cheesecake.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="apple-tart"
+          data-name="Apple Tart"
+          data-url="recipes/apple-tart.html"
+          data-img="images/apple-tart.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/strawberry-cheesecake.html">
           <img src="images/strawberry-cheesecake.png" alt="Cheesecake">
           <p>Strawberry Cheesecake</p>
         </a>
-        
-        <a href="recipes/mango-cheesecake.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="strawberry-cheesecake"
+          data-name="Strawberry Cheesecake"
+          data-url="recipes/strawberry-cheesecake.html"
+          data-img="images/strawberry-cheesecake.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/mango-cheesecake.html">
           <img src="images/mango-cheesecake.png" alt="Cheesecake">
           <p>Mango Cheesecake</p>
         </a>
-        
-        <a href="recipes/gingerbread-man.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="mango-cheesecake"
+          data-name="Mango Cheesecake"
+          data-url="recipes/mango-cheesecake.html"
+          data-img="images/mango-cheesecake.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/gingerbread-man.html">
           <img src="images/gingerbread-man.png" alt="Cookies">
           <p>Gingerbread Man Cookies</p>
         </a>
-        
-        <a href="recipes/funfetti-cupcake.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="gingerbread-man"
+          data-name="Gingerbread Man Cookies"
+          data-url="recipes/gingerbread-man.html"
+          data-img="images/gingerbread-man.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/funfetti-cupcake.html">
           <img src="images/funfetti-cupcake.png" alt="Cake">
           <p>Funfetti Cupcake</p>
         </a>
-        
-        <a href="recipes/black-forest.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="funfetti-cupcake"
+          data-name="Funfetti Cupcake"
+          data-url="recipes/funfetti-cupcake.html"
+          data-img="images/funfetti-cupcake.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/black-forest.html">
           <img src="images/black-forest.png" alt="Cake">
           <p>Black Forest Cake</p>
         </a>
+        <button class="fav-btn"
+          data-id="black-forest"
+          data-name="Black Forest Cake"
+          data-url="recipes/black-forest.html"
+          data-img="images/black-forest.png">☆ Save</button>
+      </div>
 
-        <a href="recipes/mango-cake.html" class="recipe-card">
+      <div class="recipe-card">
+        <a href="recipes/mango-cake.html">
           <img src="images/mango-cake.png" alt="Cake">
           <p>Mango Cake</p>
         </a>
-        
-        <a href="recipes/pistachio-tart.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="mango-cake"
+          data-name="Mango Cake"
+          data-url="recipes/mango-cake.html"
+          data-img="images/mango-cake.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/pistachio-tart.html">
           <img src="images/pistachio-tart.png" alt="Tart">
           <p>Pistachio Tart</p>
         </a>
-        
-        <a href="recipes/hazelnut-mousse.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="pistachio-tart"
+          data-name="Pistachio Tart"
+          data-url="recipes/pistachio-tart.html"
+          data-img="images/pistachio-tart.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/hazelnut-mousse.html">
           <img src="images/hazelnut-mousse.png" alt="Mousse">
           <p>Hazelnut Mousse</p>
         </a>
-        
-        <a href="recipes/sugar-cookies.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="hazelnut-mousse"
+          data-name="Hazelnut Mousse"
+          data-url="recipes/hazelnut-mousse.html"
+          data-img="images/hazelnut-mousse.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/sugar-cookies.html">
           <img src="images/sugar-cookies.png" alt="Cookies">
           <p>Sugar Cookies</p>
         </a>
-        
-        <a href="recipes/red-velvet.html" class="recipe-card">
+        <button class="fav-btn"
+          data-id="sugar-cookies"
+          data-name="Sugar Cookies"
+          data-url="recipes/sugar-cookies.html"
+          data-img="images/sugar-cookies.png">☆ Save</button>
+      </div>
+
+      <div class="recipe-card">
+        <a href="recipes/red-velvet.html">
           <img src="images/red-velvet.png" alt="Cookies">
           <p>Red Velvet Cookies</p>
         </a>
-    </section>
-  </main>
+        <button class="fav-btn"
+          data-id="red-velvet"
+          data-name="Red Velvet Cookies"
+          data-url="recipes/red-velvet.html"
+          data-img="images/red-velvet.png">☆ Save</button>
+      </div>
 
+    </div>
+  </section>
+</main>
+
+<script src="favourites.js"></script>
 </body>
 </html>
