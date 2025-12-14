@@ -5,3 +5,6 @@ Popular recipes links are now responsive. Each link leads to respective recipe p
 
 //recipes.html
 Links to recipes are responsive. Save buttons were added to save recipes to your favourites. For recipe cards, serving size and measurement conversion buttons are not yet responsive.
+
+//categories.html
+Keyword search bar and filtering option not yet responsive. Links to categories are responsive and display recipes under selected category.
