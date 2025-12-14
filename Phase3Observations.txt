@@ -1,1 +1,4 @@
 Observations from testing HTML: Phase 3
+
+//homepage.html
+Popular recipes links are now responsive. Each link leads to respective recipe page. Search bar not yet responsive.
