@@ -366,5 +366,15 @@ h2 {
     gap: 1rem;
   }
 }
+/* button centering */
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-card .fav-btn {
+  margin-top: auto;
+  align-self: center;
+}
 
 
