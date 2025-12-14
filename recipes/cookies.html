@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chocolate Chip Cookies</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="recipes.css" />
 </head>
 
 <body>
 
 
-<nav class="navbar recipe-nav">
+  <nav class="navbar recipe-nav">
     <div class="navbar recipe-nav">
-        <div class="nav-left">
-            <a href="../homepage.html">Homepage</a>
-            <a href="../recipes.html">Recipes</a>
-            <a href="../categories.html">Categories</a>
-            </div>
-            <div class="nav-right">
-      <input type="text" placeholder="Keyword..." class="search-input">
-      <select class="category-select">
-        <option>Filter by category</option>
-        <option>Mousses</option>
-        <option>Tarts</option>
-        <option>Cakes</option>
-        <option>Cookies</option>
-        <option>Cheesecakes</option>
-      </select>
-    </div>
-</nav>
+      <div class="nav-left">
+        <a href="../homepage.html">Homepage</a>
+        <a href="../recipes.html">Recipes</a>
+        <a href="../categories.html">Categories</a>
+      </div>
+      <div class="nav-right">
+        <input type="text" placeholder="Keyword..." class="search-input">
+        <select class="category-select">
+          <option>Filter by category</option>
+          <option>Mousses</option>
+          <option>Tarts</option>
+          <option>Cakes</option>
+          <option>Cookies</option>
+          <option>Cheesecakes</option>
+        </select>
+      </div>
+  </nav>
   </header>
-<button class="back-btn" onclick="window.location.href='../recipes.html'">
-  ← Back to Recipes
-</button>
+  <button class="back-btn" onclick="window.location.href='../recipes.html'">
+    ← Back to Recipes
+  </button>
   <section class="recipe-title">
     <h1>Chocolate Chip Cookies</h1>
     <p class="subtitle">
-      Melted butter, more brown sugar than white sugar, cornstarch, and an extra egg yolk guarantee the absolute chewiest chocolate chip cookie texture. And you don’t even need a mixer!
+      Melted butter, more brown sugar than white sugar, cornstarch, and an extra egg yolk guarantee the absolute
+      chewiest chocolate chip cookie texture. And you don’t even need a mixer!
     </p>
   </section>
 
@@ -51,26 +55,34 @@
     <div class="recipe-right">
 
       <div class="recipe-controls">
-        <button class="btn">Serves ▼</button>
+        <label for="scale">Serves:</label>
+        <select id="scale" class="btn" onchange="scaleIngredients()">
+          <option value="1">16-20</option>
+          <option value="2">32-40</option>
+          <option value="0.5">8-10</option>
+        </select>
         <button class="btn toggle">Metric - US</button>
       </div>
 
-      
+
       <div class="ingredients-card">
         <h2>INGREDIENTS</h2>
-      <ul>
-  <li>2 and 1/4 cups (281g) all-purpose flour (spooned & leveled)</li>
-  <li>1 teaspoon baking soda</li>
-  <li>1 and 1/2 teaspoons cornstarch*</li>
-  <li>1/2 teaspoon salt</li>
-  <li>3/4 cup (170g/12 Tbsp) unsalted butter, melted & cooled for 5 minutes</li>
-  <li>3/4 cup (150g) packed light or dark brown sugar</li>
-  <li>1/2 cup (100g) granulated sugar</li>
-  <li>1 large egg + 1 egg yolk, at room temperature</li>
-  <li>2 teaspoons pure vanilla extract</li>
-  <li>1 and 1/4 cups (225g) semi-sweet chocolate chips or chocolate chunks</li>
-</ul>
-
+        <ul>
+          <li><span class="amount" data-base="2.25">2 and 1/4</span> cups (281g) all-purpose flour (spooned & leveled)
+          </li>
+          <li><span class="amount" data-base="1">1</span> teaspoon baking soda</li>
+          <li><span class="amount" data-base="1.5">1 and 1/2</span> teaspoons cornstarch*</li>
+          <li><span class="amount" data-base="0.5">1/2</span> teaspoon salt</li>
+          <li><span class="amount" data-base="0.75">3/4</span> cup (170g/12 Tbsp) unsalted butter, melted & cooled for 5
+            minutes</li>
+          <li><span class="amount" data-base="0.75">3/4</span> cup (150g) packed light or dark brown sugar</li>
+          <li><span class="amount" data-base="0.5">1/2</span> cup (100g) granulated sugar</li>
+          <li><span class="amount" data-base="1">1</span> large egg + <span class="amount" data-base="0.5">1</span> egg
+            yolk, at room temperature</li>
+          <li><span class="amount" data-base="2">2</span> teaspoons pure vanilla extract</li>
+          <li><span class="amount" data-base="1.25">1 and 1/4</span> cups (225g) semi-sweet chocolate chips or chocolate
+            chunks</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -79,45 +91,57 @@
     <div class="instructions">
       <h2>INSTRUCTIONS</h2>
       <ol>
-     <ol>
-  <li>In a large bowl, whisk the flour, baking soda, cornstarch, and salt together. Set aside.</li>
-  <li>In a medium bowl, whisk the melted butter, brown sugar, and granulated sugar together until no lumps remain.</li>
-  <li>Whisk in the egg and egg yolk until combined, then whisk in the vanilla extract. The mixture will be thin.</li>
-  <li>Pour the wet ingredients into the dry ingredients and mix together with a large spoon or spatula. The dough will be very soft, thick, and shiny.</li>
-  <li>Fold in the chocolate chips. The chocolate chips may not stick well because of the melted butter, but mix them in as best as you can.</li>
-  <li>Cover the dough tightly and refrigerate for at least 2 hours or up to 3 days. Chilling overnight is highly recommended to prevent overspreading.</li>
-  <li>Preheat oven to 325°F (163°C). Line large baking sheets with parchment paper or silicone baking mats. If the dough chilled for longer than 2 hours, let it sit at room temperature for 15 minutes.</li>
-  <li>Using a cookie scoop or tablespoon, scoop about 3 scant tablespoons (2 oz / 60g) of cookie dough for XL cookies, or 2 heaping tablespoons (1.75 oz / 50g) for medium-large cookies.</li>
-  <li>Roll into a ball, then shape the dough with your fingers so it is taller rather than wide, almost like a cylinder. This helps the cookies bake thicker.</li>
-  <li>Arrange the dough balls 3 inches apart on the prepared baking sheets.</li>
-  <li>Bake the cookies for 13–14 minutes or until the edges are very lightly browned. The centers will look soft, but they will continue to set as they cool.</li>
-  <li>Cool the cookies on the baking sheet for 10 minutes before transferring to a wire rack to cool completely.</li>
-  <li>While the cookies are still warm, optionally press a few more chocolate chips into the tops for appearance.</li>
-  <li>Store cookies tightly covered at room temperature for up to 1 week.</li>
-</ol>
+        <ol>
+          <li>In a large bowl, whisk the flour, baking soda, cornstarch, and salt together. Set aside.</li>
+          <li>In a medium bowl, whisk the melted butter, brown sugar, and granulated sugar together until no lumps
+            remain.</li>
+          <li>Whisk in the egg and egg yolk until combined, then whisk in the vanilla extract. The mixture will be thin.
+          </li>
+          <li>Pour the wet ingredients into the dry ingredients and mix together with a large spoon or spatula. The
+            dough will be very soft, thick, and shiny.</li>
+          <li>Fold in the chocolate chips. The chocolate chips may not stick well because of the melted butter, but mix
+            them in as best as you can.</li>
+          <li>Cover the dough tightly and refrigerate for at least 2 hours or up to 3 days. Chilling overnight is highly
+            recommended to prevent overspreading.</li>
+          <li>Preheat oven to 325°F (163°C). Line large baking sheets with parchment paper or silicone baking mats. If
+            the dough chilled for longer than 2 hours, let it sit at room temperature for 15 minutes.</li>
+          <li>Using a cookie scoop or tablespoon, scoop about 3 scant tablespoons (2 oz / 60g) of cookie dough for XL
+            cookies, or 2 heaping tablespoons (1.75 oz / 50g) for medium-large cookies.</li>
+          <li>Roll into a ball, then shape the dough with your fingers so it is taller rather than wide, almost like a
+            cylinder. This helps the cookies bake thicker.</li>
+          <li>Arrange the dough balls 3 inches apart on the prepared baking sheets.</li>
+          <li>Bake the cookies for 13–14 minutes or until the edges are very lightly browned. The centers will look
+            soft, but they will continue to set as they cool.</li>
+          <li>Cool the cookies on the baking sheet for 10 minutes before transferring to a wire rack to cool completely.
+          </li>
+          <li>While the cookies are still warm, optionally press a few more chocolate chips into the tops for
+            appearance.</li>
+          <li>Store cookies tightly covered at room temperature for up to 1 week.</li>
+        </ol>
 
-      
+
       </ol>
     </div>
 
     <div class="nutrition">
       <h2>Nutrition Facts</h2>
       <p>Nutrition Information
-Per Serving (Serves 16-20 cookies)
-<p>Total Calories: 3,960 kcal</p>
-<p>Total Carbohydrates: 504 g</p>
-<p>Total Protein: 48 g</p>
-<p>Total Fat: 192 g</p>
-<p>Total Saturated Fat: 120 g</p>
-<p>Total Cholesterol: 672 mg</p>
-<p>Total Sodium: 2,208 mg</p>
-<p>Total Potassium: 1,272 mg</p>
-<p>Total Fiber: 24 g</p>
-<p>Total Sugar: 312 g</p>
-<p>Total Calcium: 408 mg</p>
-<p>Total Iron: 24 mg</p>
-</div>
+        Per Serving (Serves 16-20 cookies)
+      <p>Total Calories: 3,960 kcal</p>
+      <p>Total Carbohydrates: 504 g</p>
+      <p>Total Protein: 48 g</p>
+      <p>Total Fat: 192 g</p>
+      <p>Total Saturated Fat: 120 g</p>
+      <p>Total Cholesterol: 672 mg</p>
+      <p>Total Sodium: 2,208 mg</p>
+      <p>Total Potassium: 1,272 mg</p>
+      <p>Total Fiber: 24 g</p>
+      <p>Total Sugar: 312 g</p>
+      <p>Total Calcium: 408 mg</p>
+      <p>Total Iron: 24 mg</p>
+    </div>
   </section>
-
+  <script src="../backendjs/recipe-scaling.js"></script>
 </body>
+
 </html>

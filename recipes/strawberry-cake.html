@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Strawberry Cake</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="recipes.css" />
 </head>
 
 <body>
 
 
-<nav class="navbar recipe-nav">
+  <nav class="navbar recipe-nav">
     <div class="navbar recipe-nav">
-        <div class="nav-left">
-            <a href="../homepage.html">Homepage</a>
-            <a href="../recipes.html">Recipes</a>
-            <a href="../categories.html">Categories</a>
-            </div>
-            <div class="nav-right">
-      <input type="text" placeholder="Keyword..." class="search-input">
-      <select class="category-select">
-        <option>Filter by category</option>
-        <option>Mousses</option>
-        <option>Tarts</option>
-        <option>Cakes</option>
-        <option>Cookies</option>
-        <option>Cheesecakes</option>
-      </select>
-    </div>
-</nav>
+      <div class="nav-left">
+        <a href="../homepage.html">Homepage</a>
+        <a href="../recipes.html">Recipes</a>
+        <a href="../categories.html">Categories</a>
+      </div>
+      <div class="nav-right">
+        <input type="text" placeholder="Keyword..." class="search-input">
+        <select class="category-select">
+          <option>Filter by category</option>
+          <option>Mousses</option>
+          <option>Tarts</option>
+          <option>Cakes</option>
+          <option>Cookies</option>
+          <option>Cheesecakes</option>
+        </select>
+      </div>
+  </nav>
   </header>
-<button class="back-btn" onclick="window.location.href='../recipes.html'">
-  ← Back to Recipes
-</button>
+  <button class="back-btn" onclick="window.location.href='../recipes.html'">
+    ← Back to Recipes
+  </button>
   <section class="recipe-title">
     <h1>Strawberry Cake</h1>
     <p class="subtitle">
-      The one thing that sets this strawberry cake apart from others? Reduce fresh strawberry puree down and add it to the best white cake batter.
+      The one thing that sets this strawberry cake apart from others? Reduce fresh strawberry puree down and add it to
+      the best white cake batter.
     </p>
   </section>
 
@@ -51,40 +55,49 @@
     <div class="recipe-right">
 
       <div class="recipe-controls">
-        <button class="btn">Serves ▼</button>
+        <label for="scale">Amount of Cakes:</label>
+        <select id="scale" class="btn" onchange="scaleIngredients()">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="0.5">Half</option>
+        </select>
         <button class="btn toggle">Metric - US</button>
       </div>
 
-      
+
       <div class="ingredients-card">
         <h2>INGREDIENTS</h2>
         <ul>
-            STRAWBERRY PUREE
-          <li>1 pound (454g) fresh strawberries, rinsed and hulled</li>
+          <strong>STRAWBERRY PUREE</strong>
+          <li><span class="amount" data-base="1">1</span> pound (454g) fresh strawberries, rinsed and hulled</li>
 
-          CAKE
-          <li>2 and 1/2 cups (295g) cake flour (spooned & leveled)</li>
-<li>2 teaspoons baking powder</li>
-<li>1/2 teaspoon baking soda</li>
-<li>1 teaspoon salt</li>
-<li>3/4 cup (12 Tbsp; 170g) unsalted butter, softened to room temperature</li>
-<li>1 and 3/4 cups (350g) granulated sugar</li>
-<li>5 large egg whites, at room temperature</li>
-<li>1/3 cup (80g) full-fat sour cream or plain Greek yogurt, at room temperature</li>
-<li>2 teaspoons pure vanilla extract</li>
-<li>1/2 cup (120g/ml) whole milk, at room temperature</li>
-<li>1/2 cup reduced strawberry purée (from step 1)</li>
-<li>Optional: 1–2 drops red or pink food coloring</li>
+          <strong>CAKE</strong>
+          <li><span class="amount" data-base="2.5">2 and 1/2</span> cups (295g) cake flour (spooned & leveled)</li>
+          <li><span class="amount" data-base="2">2</span> teaspoons baking powder</li>
+          <li><span class="amount" data-base="0.5">1/2</span> teaspoon baking soda</li>
+          <li><span class="amount" data-base="1">1</span> teaspoon salt</li>
+          <li><span class="amount" data-base="0.75">3/4</span> cup (12 Tbsp; 170g) unsalted butter, softened to room
+            temperature</li>
+          <li><span class="amount" data-base="1.75">1 and 3/4</span> cups (350g) granulated sugar</li>
+          <li><span class="amount" data-base="5">5</span> large egg whites, at room temperature</li>
 
-          STRAWBERRY CREAM CHEESE FROSTING
-          <li>1 cup (about 25g) freeze-dried strawberries</li>
-<li>8 ounces (226g) full-fat brick cream cheese, softened to room temperature</li>
-<li>1/2 cup (8 Tbsp; 113g) unsalted butter, softened to room temperature</li>
-<li>3 cups (360g) confectioners’ sugar</li>
-<li>1 Tablespoon whole milk</li>
-<li>1 teaspoon pure vanilla extract</li>
-<li>Pinch of salt, to taste</li>
+          <li><span class="amount" data-base="0.333">1/3</span> cup (80g) full-fat sour cream or plain Greek yogurt, at
+            room temperature</li>
+          <li><span class="amount" data-base="2">2</span> teaspoons pure vanilla extract</li>
+          <li><span class="amount" data-base="0.5">1/2</span> cup (120g/ml) whole milk, at room temperature</li>
+          <li><span class="amount" data-base="0.5">1/2</span> cup reduced strawberry purée (from step 1)</li>
+          <li>Optional: 1–2 drops red or pink food coloring</li>
 
+          <strong>STRAWBERRY CREAM CHEESE FROSTING</strong>
+          <li><span class="amount" data-base="1">1</span> cup (about 25g) freeze-dried strawberries</li>
+          <li><span class="amount" data-base="226">8 ounces (226g)</span> full-fat brick cream cheese, softened to room
+            temperature</li>
+          <li><span class="amount" data-base="0.5">1/2</span> cup (8 Tbsp; 113g) unsalted butter, softened to room
+            temperature</li>
+          <li><span class="amount" data-base="3">3</span> cups (360g) confectioners’ sugar</li>
+          <li><span class="amount" data-base="1">1</span> Tablespoon whole milk</li>
+          <li><span class="amount" data-base="1">1</span> teaspoon pure vanilla extract</li>
+          <li>Pinch of salt, to taste</li>
         </ul>
       </div>
     </div>
@@ -95,59 +108,76 @@
       <h2>INSTRUCTIONS</h2>
       <ol>
         PUREE
-        <li>Make the reduced strawberry puree: In a blender or food processor, puree the fresh strawberries. You should have a little more than 1 cup (about 270g). Transfer to a small saucepan and simmer over medium-low heat, stirring occasionally, until reduced to 1/2 cup (about 135g), about 25–35 minutes. Cool completely. For best results, refrigerate overnight and bring to room temperature before using.</li>
-            CAKE:
-<li>Preheat the oven to 350°F (177°C). Grease two 9-inch round cake pans, line with parchment paper rounds, then grease the parchment.</li>
-<li>In a medium bowl, whisk together the cake flour, baking powder, baking soda, and salt. Set aside.</li>
-<li>In a large bowl using a handheld or stand mixer fitted with a paddle attachment, beat the butter and sugar together on medium-high speed until light and creamy, about 3 minutes.</li>
-<li>Add the egg whites and beat on high speed until combined, about 2 minutes. Scrape down the bowl as needed.</li>
-<li>Add the sour cream and vanilla extract. Beat on medium-high speed until combined, about 1 minute.</li>
-<li>Add the dry ingredients. With the mixer on low speed, slowly pour in the milk. Mix until just combined—do not overmix.</li>
-<li>Whisk in the room-temperature reduced strawberry puree and food coloring (if using). Ensure no lumps remain. The batter should be slightly thick.</li>
-<li>Divide the batter evenly between the prepared pans and smooth the tops.</li>
-<li>Bake for 24–25 minutes, or until a toothpick inserted into the center comes out clean.</li>
-<li>Cool the cakes in the pans on a rack for 1 hour. Run a knife around the edges, remove the cakes, peel off parchment, and allow to cool completely before frosting.</li>
-CREAM CHEESE FROSTING:
-<li>Process the freeze-dried strawberries in a blender or food processor until a fine powder forms. Sift to remove any larger pieces.</li>
-<li>In a large bowl using a handheld or stand mixer fitted with a paddle attachment, beat the cream cheese and butter together on medium-high speed until smooth, about 2 minutes.</li>
-<li>Add the confectioners’ sugar, strawberry powder, milk, and vanilla. Beat on low for 30 seconds, then on high for 3 minutes until creamy. Add a pinch of salt if needed.</li>
-<li>Cover and refrigerate the frosting for 1 hour before using. Yields about 3 cups (720g) of frosting.</li>
+        <li>Make the reduced strawberry puree: In a blender or food processor, puree the fresh strawberries. You should
+          have a little more than 1 cup (about 270g). Transfer to a small saucepan and simmer over medium-low heat,
+          stirring occasionally, until reduced to 1/2 cup (about 135g), about 25–35 minutes. Cool completely. For best
+          results, refrigerate overnight and bring to room temperature before using.</li>
+        CAKE:
+        <li>Preheat the oven to 350°F (177°C). Grease two 9-inch round cake pans, line with parchment paper rounds, then
+          grease the parchment.</li>
+        <li>In a medium bowl, whisk together the cake flour, baking powder, baking soda, and salt. Set aside.</li>
+        <li>In a large bowl using a handheld or stand mixer fitted with a paddle attachment, beat the butter and sugar
+          together on medium-high speed until light and creamy, about 3 minutes.</li>
+        <li>Add the egg whites and beat on high speed until combined, about 2 minutes. Scrape down the bowl as needed.
+        </li>
+        <li>Add the sour cream and vanilla extract. Beat on medium-high speed until combined, about 1 minute.</li>
+        <li>Add the dry ingredients. With the mixer on low speed, slowly pour in the milk. Mix until just combined—do
+          not overmix.</li>
+        <li>Whisk in the room-temperature reduced strawberry puree and food coloring (if using). Ensure no lumps remain.
+          The batter should be slightly thick.</li>
+        <li>Divide the batter evenly between the prepared pans and smooth the tops.</li>
+        <li>Bake for 24–25 minutes, or until a toothpick inserted into the center comes out clean.</li>
+        <li>Cool the cakes in the pans on a rack for 1 hour. Run a knife around the edges, remove the cakes, peel off
+          parchment, and allow to cool completely before frosting.</li>
+        CREAM CHEESE FROSTING:
+        <li>Process the freeze-dried strawberries in a blender or food processor until a fine powder forms. Sift to
+          remove any larger pieces.</li>
+        <li>In a large bowl using a handheld or stand mixer fitted with a paddle attachment, beat the cream cheese and
+          butter together on medium-high speed until smooth, about 2 minutes.</li>
+        <li>Add the confectioners’ sugar, strawberry powder, milk, and vanilla. Beat on low for 30 seconds, then on high
+          for 3 minutes until creamy. Add a pinch of salt if needed.</li>
+        <li>Cover and refrigerate the frosting for 1 hour before using. Yields about 3 cups (720g) of frosting.</li>
 
         ASSEMBLY:
         <li>Level the cake layers: using a serrated knife, slice a thin layer off the tops to create flat surfaces.</li>
-<li>Place the first layer on a cake stand or turntable. Spread 3/4–1 cup (180–240g) of frosting evenly on top.</li>
-<li>Place the second layer upside-down on top. Spread 1 cup (240g) of frosting over the top and sides to create a thin crumb coat. Smooth with a bench scraper.</li>
-<li>Refrigerate the cake for about 20 minutes until the crumb coat sets.</li>
-<li>Cover the top and sides with the remaining frosting. For best slicing, refrigerate at least 20 minutes before cutting.</li>
-<li>Store leftover cake tightly covered in the refrigerator for up to 5 days. If chilled longer than 4 hours, bring to room temperature for about 2 hours before serving.</li>
+        <li>Place the first layer on a cake stand or turntable. Spread 3/4–1 cup (180–240g) of frosting evenly on top.
+        </li>
+        <li>Place the second layer upside-down on top. Spread 1 cup (240g) of frosting over the top and sides to create
+          a thin crumb coat. Smooth with a bench scraper.</li>
+        <li>Refrigerate the cake for about 20 minutes until the crumb coat sets.</li>
+        <li>Cover the top and sides with the remaining frosting. For best slicing, refrigerate at least 20 minutes
+          before cutting.</li>
+        <li>Store leftover cake tightly covered in the refrigerator for up to 5 days. If chilled longer than 4 hours,
+          bring to room temperature for about 2 hours before serving.</li>
 
-      
+
       </ol>
     </div>
 
     <div class="nutrition">
       <h2>Nutrition Facts</h2>
       <p>Nutrition Information
-Per Serving (Serves 12)
-<p>Calories: 508kcal</p>
-<p>Carbohydrates: 74g</p>
-<p>Protein: 5g</p>
-<p>Fat: 21g</p>
-<p>Saturated Fat: 13g</p>
-<p>Polyunsaturated Fat: 1g</p>
-<p>Monounsaturated Fat: 5g</p>
-<p>Trans Fat: 0g</p>
-<p>Cholesterol: 55mg</p>
-<p>Sodium: 322mg</p>
-<p>Potassium: 156mg</p>
-<p>Fiber: 1g</p>
-<p>Sugar: 58g</p>
-<p>Vitamin A: 620IU</p>
-<p>Vitamin C: 13mg</p>
-<p>Calcium: 83mg</p>
-<p>Iron: 1.5mg</p>
-</div>
+        Per Serving (Serves 12)
+      <p>Calories: 508kcal</p>
+      <p>Carbohydrates: 74g</p>
+      <p>Protein: 5g</p>
+      <p>Fat: 21g</p>
+      <p>Saturated Fat: 13g</p>
+      <p>Polyunsaturated Fat: 1g</p>
+      <p>Monounsaturated Fat: 5g</p>
+      <p>Trans Fat: 0g</p>
+      <p>Cholesterol: 55mg</p>
+      <p>Sodium: 322mg</p>
+      <p>Potassium: 156mg</p>
+      <p>Fiber: 1g</p>
+      <p>Sugar: 58g</p>
+      <p>Vitamin A: 620IU</p>
+      <p>Vitamin C: 13mg</p>
+      <p>Calcium: 83mg</p>
+      <p>Iron: 1.5mg</p>
+    </div>
   </section>
-
+  <script src="../backendjs/recipe-scaling.js"></script>
 </body>
+
 </html>
