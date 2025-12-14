@@ -2,3 +2,6 @@ Observations from testing HTML: Phase 3
 
 //homepage.html
 Popular recipes links are now responsive. Each link leads to respective recipe page. Search bar not yet responsive.
+
+//recipes.html
+Links to recipes are responsive. Save buttons were added to save recipes to your favourites. For recipe cards, serving size and measurement conversion buttons are not yet responsive.
