@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="recipes.css" />
+  <link rel="stylesheet" href="darkmode.css" />
 </head>
 
 <body>
@@ -22,6 +23,13 @@
         <a href="../favourites.html">Favorites</a>
       </div>
       <div class="nav-right">
+        <div class="dark-toggle">
+          <span class="toggle-text">Dark Mode</span>
+  
+          <label class="theme-switch">
+            <input type="checkbox" id="darkToggle">
+            <span class="slider"></span>
+          </label>
         <input type="text" placeholder="Search..." class="search-input">
         <div class="search-results"></div>
       </div>
@@ -116,6 +124,7 @@
   <script src="../backendjs/recipe-scaling.js"></script>
   <script src="../backendjs/ingredients-checklist.js"></script>
   <script src="../backendjs/search-bar.js"></script>
+  <script src="../backendjs/darkmode.js"></script>
 </body>
 
 </html>
