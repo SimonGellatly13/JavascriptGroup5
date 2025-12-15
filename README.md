@@ -53,5 +53,10 @@
 <img src="https://github.com/user-attachments/assets/b11cf0ea-8a75-4b5c-a165-999d75a276af" alt="image" width="350"/>
 <img src="https://github.com/user-attachments/assets/42e5d8fc-de7e-4fd0-be73-f079e324d40b" alt="image" width="350"/>
 
-
+<strong> Group Members </strong>
+- Monique
+  - Added search functionality fetching from JSON
+  - Added ingredient scaling
+  - Implemented ingredient checklist with clickable checkmarks
+  - Developed dark mode toggle and persistence across pages
 
