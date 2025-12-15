@@ -60,3 +60,21 @@
   - Implemented ingredient checklist with clickable checkmarks
   - Developed dark mode toggle and persistence across pages
 
+- Kristine
+  - Created concept of webpage
+  - Initialized recipe pages
+  - Established CSS style across webpage
+
+- Simon
+  - Created git codebase and handled merge conflicts
+  - Resolved merge conflicts as they arose
+  - Created index.html as a redirecting landing page for the git pages deployment
+
+- Keziah
+  - Handled recording the status of webpage and reporting major issues in each phase
+
+- Arman
+  - Handled weekly submission documentation
+
+- Jahziah
+  - Aided in development of dark mode toggle
