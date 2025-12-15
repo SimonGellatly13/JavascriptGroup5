@@ -1,0 +1,67 @@
+body.dark {
+    background-color: #121212;
+    color: #fab8b8;
+}
+
+body.dark .navbar {
+    background-color: #1e1e1e;
+}
+
+body.dark a {
+    color: #ee98ad;
+}
+
+body.dark .card,
+body.dark .recipe-card {
+    background-color: #1f1f1f;
+}
+
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+}
+
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.3s;
+    border-radius: 30px;
+}
+
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+
+input:checked+.slider {
+    background-color: #333;
+}
+
+input:checked+.slider::before {
+    transform: translateX(24px);
+}
