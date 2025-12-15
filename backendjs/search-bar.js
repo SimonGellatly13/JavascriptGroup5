@@ -9,7 +9,7 @@ if (searchInput && resultsContainer) {
 
   // fetching all recipes from json file
   let recipes = [];
-  fetch('../backendjs/recipes.json')
+  fetch('/backendjs/recipes.json')
   // converting json to an onject
     .then(res => res.json())
     // saving in variable called recipes
