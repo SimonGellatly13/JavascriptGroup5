@@ -39,7 +39,7 @@ body.dark .recipe-card {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #3a3939;
     transition: 0.3s;
     border-radius: 30px;
 }
@@ -52,7 +52,7 @@ body.dark .recipe-card {
     width: 22px;
     left: 3px;
     bottom: 3px;
-    background-color: white;
+    background-color: rgb(36, 35, 35);
     transition: 0.3s;
     border-radius: 50%;
 }
@@ -65,3 +65,11 @@ input:checked+.slider {
 input:checked+.slider::before {
     transform: translateX(24px);
 }
+
+body.dark .categories {
+    background-color: #121212; 
+  }
+  
+  body.dark .category-grid {
+    background-color: #121212;
+  }
