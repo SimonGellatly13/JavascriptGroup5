@@ -11,6 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="homepage.css" />
+  <link rel="stylesheet" href="darkmode.css" />
 </head>
 
 <body>
@@ -24,6 +25,14 @@
     </div>
 
     <div class="nav-right">
+      <div class="dark-toggle">
+        <span class="toggle-text">Dark Mode</span>
+
+        <label class="theme-switch">
+          <input type="checkbox" id="darkToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
       <input type="text" placeholder="Search..." class="search-input">
       <div class="search-results"></div>
     </div>
@@ -74,6 +83,7 @@
   </footer>
 
   <script src="../backendjs/search-bar.js"></script>
+  <script src="../backendjs/darkmode.js"></script>
 </body>
 
 </html>
