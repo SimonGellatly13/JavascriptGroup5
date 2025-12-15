@@ -9,15 +9,15 @@ if (searchInput && resultsContainer) {
 
   // fetching all recipes from json file
   let recipes = [];
-  fetch('/backendjs/recipes.json')
-  // converting json to an onject
+  fetch('/JavascriptGroup5/backendjs/recipes.json')
+    // converting json to an onject
     .then(res => res.json())
     // saving in variable called recipes
     .then(data => recipes = data)
-    
+
 
   // will listen for typing from user
-  searchInput.addEventListener('input', function() {
+  searchInput.addEventListener('input', function () {
 
     // making it so user doesnt have to use proper case
     const query = this.value.toLowerCase();
@@ -31,7 +31,7 @@ if (searchInput && resultsContainer) {
 
     // Show matching recipes
     filtered.forEach(r => {
-        //linking to recipe page
+      //linking to recipe page
       const card = document.createElement('a');
       card.href = r.url;
       //styyling like card
@@ -41,7 +41,7 @@ if (searchInput && resultsContainer) {
         <p>${r.name}</p>
       `;
       //adding results to page
-      resultsContainer.appendChild(card); 
+      resultsContainer.appendChild(card);
     });
   });
 }
