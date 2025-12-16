@@ -85,7 +85,7 @@
 - Keziah
   - Handled recording the status of webpage and reporting major issues in each phase
   - Conducted thorough testing of the website and documented issues to guide developers in resolving bugs and implementing features
-  - Identified functionality and usability problems to ensure the website met project requirements.
+  - Identified functionality and usability problems to ensure the website met project requirements
 
 - Arman
   - Handled weekly submission documentation
