@@ -53,6 +53,15 @@
 <img src="https://github.com/user-attachments/assets/b11cf0ea-8a75-4b5c-a165-999d75a276af" alt="image" width="350"/>
 <img src="https://github.com/user-attachments/assets/42e5d8fc-de7e-4fd0-be73-f079e324d40b" alt="image" width="350"/>
 
+<strong> Steps for Installation </strong>
+
+- To run the project, the file types in use are: html, css, js, json, and png
+- Upon downloading, double check the organizational structure for the files is maintained - file references are relative paths for most website functionality
+- Dependencies for the project involve pulling fonts from google api, so an internet connection should be factored in
+
+<strong> Presentation </strong>
+[Youtube Link](https://youtu.be/WwG0WObrwSs)
+
 <strong> Group Members </strong>
 - Monique
   - Added search functionality fetching from JSON
@@ -75,6 +84,8 @@
 
 - Arman
   - Handled weekly submission documentation
+  - Devloped adaptability for multiple device sizes
+  - Created favourites functionality
 
 - Jahziah
   - Aided in development of dark mode toggle
