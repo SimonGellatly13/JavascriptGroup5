@@ -79,9 +79,13 @@
   - Created git codebase and handled merge conflicts
   - Resolved merge conflicts as they arose
   - Created index.html as a redirecting landing page for the git pages deployment
+  - Oversaw team workflow and Coordinated team efforts 
+  - Managed project timelines to ensure all deadlines were met
 
 - Keziah
   - Handled recording the status of webpage and reporting major issues in each phase
+  - Conducted thorough testing of the website and documented issues to guide developers in resolving bugs and implementing features
+  - Identified functionality and usability problems to ensure the website met project requirements.
 
 - Arman
   - Handled weekly submission documentation
