@@ -60,6 +60,7 @@
 - Dependencies for the project involve pulling fonts from google api, so an internet connection should be factored in
 
 <strong> Presentation </strong>
+
 [Youtube Link](https://youtu.be/WwG0WObrwSs)
 
 <strong> Group Members </strong>
